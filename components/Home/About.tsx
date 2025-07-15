@@ -16,7 +16,7 @@ const About = () => {
     const isImageInView = useInView(imageRef, { once: false, margin: '-150px 0px' });
 
     return (
-        <div className="mt-[120px] relative">
+        <div className="mt-[120px] relative overflow-x-hidden">
             {/* Content Section */}
             <motion.div
                ref={titleRef}

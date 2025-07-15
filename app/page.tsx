@@ -9,10 +9,10 @@ export default function Home() {
   return (
     <div>
       <Hero />
-      <About />
+      {/* <About />
       <Products />
       <Industries />
-      <Certifications />
+      <Certifications /> */}
     </div>
   );
 }

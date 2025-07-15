@@ -1,10 +1,10 @@
 import React from 'react'
-import { ArrowRight, GreenLogo } from '../Reusable/icons'
+import { ArrowRight, FooterBuilding, GreenLogo } from '../Reusable/icons'
 import Image from 'next/image'
 
 const Footer = () => {
   return (
-    <footer className="h-[394px] bg-[#F8F9FA] flex flex-row justify-between items-start p-8">
+    <footer className="h-[394px] bg-[#F8F9FA] flex flex-row justify-between items-start px-[80px] py-20 relative">
       <Image
         src={GreenLogo}
         alt="Company Logo"
@@ -100,6 +100,7 @@ const Footer = () => {
 </div>
 
       </div>
+      <Image src={FooterBuilding} alt='Building Footer' className='absolute bottom-0 w-40' /> 
     </footer>
   );
 }

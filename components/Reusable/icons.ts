@@ -30,3 +30,4 @@ export {default as Certificate3 } from '@/assets/Home/Certificates/image3.png';
 
 // Footer 
 export {default as ArrowRight } from '@/assets/Footer/upRight.png'; 
+export {default as FooterBuilding } from '@/assets/Footer/building.png'; 

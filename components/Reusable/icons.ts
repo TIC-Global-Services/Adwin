@@ -27,6 +27,9 @@ export {default as Certificate1 } from '@/assets/Home/Certificates/image1.png';
 export {default as Certificate2 } from '@/assets/Home/Certificates/image2.png';
 export {default as Certificate3 } from '@/assets/Home/Certificates/image3.png';
 
+// Home - Certificates
+export {default as ContactHeroImg } from '@/assets/Contact/ContactHero.jpg';
+
 
 // Footer 
 export {default as ArrowRight } from '@/assets/Footer/upRight.png'; 

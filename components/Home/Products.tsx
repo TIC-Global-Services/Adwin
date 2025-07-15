@@ -72,7 +72,7 @@ const Products: React.FC = () => {
           delay: index * 0.1 
         }}
         style={{ backgroundColor: product.bg }}
-        className="rounded-lg border border-[#CFCFCF] transition-shadow duration-300 overflow-hidden group h-[369px]"
+        className="rounded-lg border border-[#CFCFCF] transition-shadow duration-300  group h-[369px]"
       >
         <div className="block h-full p-8">
           <div className="flex flex-col h-full justify-between">
@@ -161,7 +161,7 @@ const Products: React.FC = () => {
   };
 
   return (
-    <div className="md:mt-[180px] mt-[80px] overflow-x-hidden md:px-0 px-[15px] md:py-20 py-5 bg-[#F6F6F6]">
+    <div className=" py-20 px-10 bg-[#F6F6F6]">
       <motion.div
         ref={titleRef}
         initial={{ opacity: 0, y: 30 }}

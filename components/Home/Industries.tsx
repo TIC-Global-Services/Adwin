@@ -56,7 +56,7 @@ const Industries = () => {
     }, []);
 
     return (
-        <div className="flex flex-col items-center mt-[120px] w-full">
+        <div className="flex flex-col items-center mt-[120px] w-full overflow-x-hidden">
             <motion.div
                 ref={titleRef}
                 initial={{ opacity: 0, y: 30 }}
@@ -64,14 +64,14 @@ const Industries = () => {
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 className="flex flex-row justify-between items-center w-full max-w-7xl px-4 mb-8"
             >
-                <h1 className="text-[#151414] text-[46px] font-archivo font-semibold">
+                <h1 className="text-[#151414] xl:text-[46px] lg:text-[42px] md:text-[36px] text-[18px] font-archivo font-semibold">
                     Industries we serve
                 </h1>
                 <div className="flex flex-row items-center space-x-3">
                     <button
                         onClick={scrollLeft}
                         disabled={!canScrollLeft}
-                        className={`w-10 h-10 flex items-center justify-center rounded-[16.27px] transition-all duration-200 ${
+                        className={`md:w-10 md:h-10 w-8 h-8 flex items-center justify-center rounded-[16.27px] transition-all duration-200 ${
                             canScrollLeft 
                                 ? 'bg-[#E8E8E8] text-black hover:bg-[#d8d8d8] cursor-pointer' 
                                 : 'bg-[#f5f5f5] text-gray-400 cursor-not-allowed'
@@ -82,7 +82,7 @@ const Industries = () => {
                     <button
                         onClick={scrollRight}
                         disabled={!canScrollRight}
-                        className={`w-10 h-10 flex items-center justify-center rounded-[16.27px] transition-all duration-200 ${
+                        className={`md:w-10 md:h-10 w-8 h-8 flex items-center justify-center rounded-[16.27px] transition-all duration-200 ${
                             canScrollRight 
                                 ? 'bg-[#E8E8E8] text-black hover:bg-[#d8d8d8] cursor-pointer' 
                                 : 'bg-[#f5f5f5] text-gray-400 cursor-not-allowed'
@@ -94,7 +94,7 @@ const Industries = () => {
             </motion.div>
 
             {/* Scrollable container */}
-            <div className="w-full pl-30 mt-[50px] px-4">
+            <div className="w-full md:pl-30 md:mt-[50px] mt-[1px] px-4">
                 <div 
                     ref={scrollContainerRef}
                     className="flex gap-6 overflow-x-auto scrollbar-hide pb-4"
@@ -103,7 +103,7 @@ const Industries = () => {
                     {IndustriesWeServe.map((content, index) => (
                         <motion.div 
                             key={index} 
-                            className="flex-shrink-0 relative w-[455px] h-[455px] group cursor-pointer"
+                            className="flex-shrink-0 relative md:w-[455px] md:h-[455px] w-[245px] h-[245px] group cursor-pointer"
                             initial={{ opacity: 0, x: 50 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -113,7 +113,7 @@ const Industries = () => {
                                 alt={content.title}
                                 width={455}
                                 height={455}
-                                className="rounded-[53.68px] w-full h-full object-cover transition-transform duration-300 "
+                                className="md:rounded-[53.68px] rounded-[30px] w-full h-full object-cover transition-transform duration-300 "
                             />
                             
                             

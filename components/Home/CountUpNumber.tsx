@@ -47,7 +47,7 @@ const StatCard: React.FC<{
 
   return (
     <motion.div
-      className="bg-white rounded-lg py-2 mt-7 text-start"
+      className="bg-white rounded-lg py-2 md:mt-7 text-start"
       initial={{ opacity: 0, y: 20 }}
       animate={triggerAnimation ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
       transition={{
@@ -58,7 +58,7 @@ const StatCard: React.FC<{
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.98 }}
     >
-      <div className="text-4xl font-bold text-[#191919] mb-2 flex items-center justify-start">
+      <div className="md:text-4xl text-2xl font-bold text-[#191919] md:mb-2 flex items-center justify-start">
         <MotionNumberFlow
           key={`${triggerAnimation}-${index}`} // Force re-render on trigger change
           value={currentValue}
@@ -84,7 +84,7 @@ const StatCard: React.FC<{
 
       </div>
       <motion.p
-        className="text-[#4E4E4E] font-medium text-lg w-[240px]"
+        className="text-[#4E4E4E] font-medium md:text-lg text-sm md:w-[240px]"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: triggerAnimation ? 1 : 0, y: triggerAnimation ? 0 : 10 }}
         transition={{ delay: index * 0.15 + 0.4, duration: 0.6 }}
@@ -108,9 +108,9 @@ const CountUpNumber: React.FC = () => {
   }, [isInView]);
 
   return (
-    <div ref={ref} className="w-full max-w-6xl mx-auto py-8">
+    <div ref={ref} className="w-full max-w-6xl mx-auto py-8 ">
       <motion.div
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+        className="grid grid-cols-2 md:gap-4 gap-2"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}

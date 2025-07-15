@@ -3,7 +3,7 @@ import Link from 'next/link';
 const Hero = () => {
   return (
     <div className='p-[15px]'>
-      <div id="Home-section" className="relative h-[100dvh]  xl:h-[96.5dvh] w-full overflow-hidden rounded-[16px]">
+      <div id="Home-section" className="relative h-[100dvh] lg:h-[97dvh]  xl:h-[96.5dvh] w-full overflow-hidden rounded-[16px]">
         {/* Background Video */}
         <video
           autoPlay

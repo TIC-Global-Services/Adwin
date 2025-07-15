@@ -23,7 +23,7 @@ const About = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isTitleInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="flex md:flex-row flex-col w-full justify-between md:items-start items-center max-w-5xl mx-auto "
+          className="flex md:flex-row flex-col w-full justify-between md:items-start items-center xl:max-w-5xl lg:max-w-4xl mx-auto "
         >
           <h1 className="font-archivo text-[18px] text-[#4A4A4A] mb:0 mb-5 font-regular">
             About us
@@ -40,7 +40,7 @@ const About = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isContentInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-          className="flex md:flex-row flex-col justify-between items-start md:mt-30 mt-10"
+          className="flex lg:flex-row flex-col justify-between items-start md:mt-30 mt-10"
         >
           <Image src={Model} alt="about" className="w-auto md:h-[719px]" />
 
@@ -68,7 +68,7 @@ const About = () => {
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
           className="absolute bottom-0 right-0"
         >
-          <Image src={BatteryTop} alt="about" className="w-[557px] h-[188px] hidden md:block" />
+          <Image src={BatteryTop} alt="about" className="w-[557px] h-[188px] hidden lg:block" />
         </motion.div>
       </div>
     );

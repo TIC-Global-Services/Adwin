@@ -21,7 +21,7 @@ const NavbarContents: NavItem[] = [
   { title: 'Home', link: '/' },
   {
     title: 'About us',
-    link: '/about',
+    link: '',
     dropdown: [
       { title: 'Overview & Group Companies', link: '/about/overview' },
       { title: 'Our Journey', link: '/about/journey' },

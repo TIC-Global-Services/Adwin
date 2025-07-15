@@ -56,7 +56,7 @@ const Industries = () => {
     }, []);
 
     return (
-        <div className="flex flex-col items-center mt-[120px] w-full overflow-x-hidden">
+        <div className="flex flex-col items-center md:-[120px] mt-[70px] w-full overflow-x-hidden">
             <motion.div
                 ref={titleRef}
                 initial={{ opacity: 0, y: 30 }}

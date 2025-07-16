@@ -27,6 +27,9 @@ const DynamicHero: React.FC<HeroProps> = ({
         id="Home-section"
         className="relative h-[100dvh] lg:h-[97dvh] xl:h-[96.5dvh] w-full overflow-hidden rounded-[16px]"
       >
+        <div className=' h-dvh lg:h-[97dvh] w-full bg-black/50 rounded-2xl absolute inset-0 z-50'>
+
+        </div>
         {/* Background Media */}
         {mediaType === 'video' ? (
           <video
@@ -50,7 +53,7 @@ const DynamicHero: React.FC<HeroProps> = ({
         )}
 
         {/* Hero Content */}
-        <div className="relative z-10 h-full flex flex-col justify-end px-4 py-6 sm:px-6 sm:py-8 md:px-8 md:py-10 lg:px-10 lg:py-12 xl:px-12 xl:py-14 items-start text-white space-y-4">
+        <div className="relative h-full flex flex-col justify-end px-4 py-6 sm:px-6 sm:py-8 md:px-8 md:py-10 lg:px-10 lg:py-12 xl:px-12 xl:py-14 items-start text-white space-y-4 z-50">
           <div className="text-left">
             <h1 className="text-[28px] leading-[34px] sm:text-[36px] sm:leading-[44px] md:text-[48px] md:leading-[58px] lg:text-[58px] lg:leading-[70px] xl:text-[68px] xl:leading-[84px] font-archivo font-normal">
               {title}

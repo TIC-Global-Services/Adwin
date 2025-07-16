@@ -39,10 +39,10 @@ const NavbarContents: NavItem[] = [
   
     // ]
   },
-  { title: 'Partner with', link: '/partner' },
+  { title: 'Partner with us', link: '/partner-with-us' },
   { title: 'Services', link: '/service' },
-  { title: 'careers', link: '/careers' },
-  { title: 'Global Business', link: '/global' },
+  { title: 'Careers', link: '/careers' },
+  { title: 'Global Business', link: '/global-business' },
   { title: 'FAQ', link: '/faq' },
   // { title: 'Contact Us', link: '/contact' },
 ];
@@ -98,7 +98,7 @@ const Navbar: React.FC = () => {
             return (
               <div 
                 key={item.title}
-                className="relative"
+                className="relative text-white"
                 onMouseEnter={() => handleMouseEnter(index)}
                 onMouseLeave={handleMouseLeave}
               >

@@ -33,11 +33,11 @@ const NavbarContents: NavItem[] = [
   {
     title: 'Tools',
     link: '/tools',
-    // dropdown: [
-    //   { title: 'Solar Calculator', link: '/tools/solar-calculator' },
-    //   { title: 'Load Calculator', link: '/tools/load-calculator' },
+    dropdown: [
+      { title: 'Solar Calculator', link: '/tools/solar-calculator' },
+      { title: 'Load Calculator', link: '/tools/load-calculator' },
   
-    // ]
+    ]
   },
   { title: 'Partner with', link: '/partner' },
   { title: 'Services', link: '/service' },

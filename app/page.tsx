@@ -16,6 +16,7 @@ export default function Home() {
         description="Built with breakthrough engineering and a legacy of trust. Explore Adwin's cutting-edge solutions across power storage, electric mobility, and energy-efficient lighting."
         buttonText="Know more"
         buttonLink="/about"
+        addLineBreak={true}
       />
       <About />
       <Products />

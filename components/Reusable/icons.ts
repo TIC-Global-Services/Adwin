@@ -31,6 +31,30 @@ export {default as Certificate3 } from '@/assets/Home/Certificates/image3.png';
 export {default as ContactHeroImg } from '@/assets/Contact/ContactHero.jpg';
 
 
+//about - Overview
+export {default as AboutOverViewHero} from '@/assets/About/overview/Frame 1171274965 (1).png'
+export {default as AboutJourney} from '@/assets/About/overview/journey.png'
+
+
+//about - companies
+export {default as CompanyLogo1} from '@/assets/About/companies/logo1.png';
+export {default as Company} from '@/assets/About/companies/Frame 1171275306.png';
+
+//about - directories
+export {default as Director1} from '@/assets/About/companies/dir1.png';
+export {default as Director2} from '@/assets/About/companies/dir2.png';
+export {default as Director3} from '@/assets/About/companies/dir3.png';
+export {default as Director4} from '@/assets/About/companies/dir4.png';
+
+
+
+
+
+
 // Footer 
 export {default as ArrowRight } from '@/assets/Footer/upRight.png'; 
 export {default as FooterBuilding } from '@/assets/Footer/building.png'; 
+
+
+
+

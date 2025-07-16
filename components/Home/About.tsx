@@ -46,7 +46,7 @@ const About = () => {
               className=" md:max-w-2xl h-auto object-contain"
               priority
             />
-            <div className=' absolute bottom-0 bg-gradient-to-t from-white via-white/50 to-white/0 h-[20dvh] w-full'></div>
+            <div className='md:hidden absolute bottom-0 bg-gradient-to-t from-white via-white/50 to-white/0 h-[20dvh] w-full'></div>
           </div>
 
           <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start gap-6 text-center lg:text-left">

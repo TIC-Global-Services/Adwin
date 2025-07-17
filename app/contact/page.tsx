@@ -1,4 +1,4 @@
-import GetInTouch from '@/components/Contact/GetInTouch'
+
 import StoreLocator from '@/components/Contact/StoreLocator'
 import DynamicHero from '@/components/Reusable/DynamicHero'
 import { ContactHeroImg } from '@/components/Reusable/icons'
@@ -12,7 +12,7 @@ const page = () => {
                 mediaSrc={ContactHeroImg}
                 title="Contact Us"
             />
-            <GetInTouch />
+            <HaveAQuery />
             <StoreLocator />
         </div>
     )

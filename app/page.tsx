@@ -3,7 +3,6 @@ import Certifications from "@/components/Home/Certifications";
 import Industries from "@/components/Home/Industries";
 import Products from "@/components/Home/Products";
 import DynamicHero from "@/components/Reusable/DynamicHero";
-import Image from "next/image";
 
 export default function Home() {
   return (

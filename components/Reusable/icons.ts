@@ -64,9 +64,9 @@ export {default as AboutJourney} from '@/assets/About/overview/journey.png'
 
 
 //about - companies
-export {default as CompanyLogo1} from '@/assets/About/Companies/logo1.png';
-export {default as Company} from '@/assets/About/Companies/Frame 1171275306.png';
-export {default as MobileCompany} from '@/assets/About/Companies/mobile_BgIMage.png';
+export {default as CompanyLogo1} from '@/assets/About/companies/logo1.png';
+export {default as Company} from '@/assets/About/companies/Frame 1171275306.png';
+export {default as MobileCompany} from '@/assets/About/companies/mobile_BgIMage.png';
 
 //about - directories
 export {default as Director1} from '@/assets/About/companies/dir1.png';

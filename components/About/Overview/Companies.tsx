@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect, useRef } from 'react';
-import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
+import { motion, useScroll, AnimatePresence } from "framer-motion";
 import { CompanyLogos, companiesContent } from '../Contents';
 import Image from 'next/image';
 import { Company, MobileCompany } from '../../Reusable/icons';

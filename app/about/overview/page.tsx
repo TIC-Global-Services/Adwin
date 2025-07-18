@@ -1,6 +1,7 @@
-import Companies from '@/components/About/Companies'
-import Directors from '@/components/About/Directors'
-import Journey from '@/components/About/Journey'
+import Companies from '@/components/About/Overview/Companies'
+import Directors from '@/components/About/Overview/Directors'
+import Journey from '@/components/About/Overview/Journey'
+import Sustainability from '@/components/About/Overview/Sustainability'
 import About from '@/components/Home/About'
 import DynamicHero from '@/components/Reusable/DynamicHero'
 import { AboutOverViewHero } from '@/components/Reusable/icons'
@@ -19,6 +20,7 @@ const page = () => {
             <Journey />
             <Companies />
             <Directors />
+            <Sustainability />
 </div>
   )
 }

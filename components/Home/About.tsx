@@ -15,29 +15,30 @@ const About = () => {
     const isImageInView = useInView(imageRef, { once: false, margin: '-150px 0px' });
 
     return (
-      <div className="relative mx-auto  px-4 lg:px-20 py-12 md:py-20 ">
+      <div className="relative mx-auto  px-4 lg:px-20 md:pt-20 pt-10 md:pb-0 pb-10 ">
         {/* Content Section */}
+      
         <motion.div
-          ref={titleRef}
-          initial={{ opacity: 0, y: 30 }}
-          animate={isTitleInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="flex flex-col md:flex-row justify-between items-center md:items-start gap-6 md:gap-12 mb-12"
-        >
-          <h1 className="font-archivo text-lg md:text-xl text-[#4A4A4A] font-normal">
-            About us
-          </h1>
-          <p className="text-[#151414] font-light text-base sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl leading-relaxed text-center md:text-left max-w-2xl">
-            Delivering trusted power solutions for solar, backup, and mobility across emerging and established global markets.
-          </p>
-        </motion.div>
+        ref={titleRef}
+        initial={{ opacity: 0, y: 50 }}
+        animate={isTitleInView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="flex md:flex-row flex-col w-full justify-between md:items-start items-center max-w-7xl mx-auto"
+      >
+        <h1 className="font-archivo md:text-[28px] text-[18px] text-[#4A4A4A] font-regular">
+        About us
+        </h1>
+        <p className="text-[#151414] font-light xl:text-[36px] lg:text-[35px] md:text-[32px] md:leading-[40px] text-[16px] xl:leading-[46px] md:text-start text-center md:mt-0 mt-3">
+        Delivering trusted power solutions for<br />solar, backup, and mobility across <br /> emerging and established global markets.
+        </p>
+      </motion.div>
 
         <motion.div
           ref={contentRef}
           initial={{ opacity: 0, y: 30 }}
           animate={isContentInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-          className="flex flex-col lg:flex-row justify-between items-center "
+          className="flex flex-col lg:flex-row justify-between items-center md:mt-20 mt-10 md:space-x-10"
         >
           <div className="w-full lg:w-1/2 relative flex items-end justify-end">
             <Image 
@@ -49,7 +50,7 @@ const About = () => {
             <div className='md:hidden absolute bottom-0 bg-gradient-to-t from-white via-white/50 to-white/0 h-[20dvh] w-full'></div>
           </div>
 
-          <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start gap-6 text-center lg:text-left">
+          <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start gap-6 text-center lg:text-left md:mt-0 mt-10 ">
             <p className="text-base md:text-lg text-[#191919] max-w-prose">
               Adwin has delivered over 3.5 million units across 14+ Indian states and international markets like Nepal, UAE, Nigeria, and many more. Serving homes and businesses, we continue to grow our presence. We're entering new regions in Africa and the Middle East, targeting Egypt, Uganda, and more.
             </p>

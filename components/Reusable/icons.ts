@@ -95,11 +95,11 @@ export {default as InnovationImage} from '@/assets/About/research/innovation.png
 
 //About -Research - Innovation - Icons
 export {default as InnovationImage2} from '@/assets/About/research/innovation/Frame 1171275291.png'
-export {default as Icon1} from '@/assets/About/Research/Innovation/Logos/icon1.png';
-export {default as Icon2} from '@/assets/About/Research/Innovation/Logos/icon2.png';
-export {default as Icon3} from '@/assets/About/Research/Innovation/Logos/icon3.png';
-export {default as Icon4} from '@/assets/About/Research/Innovation/Logos/icon4.png';
-export {default as Icon5} from '@/assets/About/Research/Innovation/Logos/icon5.png';
+export {default as Icon1} from '@/assets/About/Research/innovation/Logos/icon1.png';
+export {default as Icon2} from '@/assets/About/Research/innovation/Logos/icon2.png';
+export {default as Icon3} from '@/assets/About/Research/innovation/Logos/icon3.png';
+export {default as Icon4} from '@/assets/About/Research/innovation/Logos/icon4.png';
+export {default as Icon5} from '@/assets/About/Research/innovation/Logos/icon5.png';
 
 
 export {default as ProductHero} from '@/assets/Product/HeroProduct.png';

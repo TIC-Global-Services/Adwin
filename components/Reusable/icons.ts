@@ -59,8 +59,8 @@ export {default as StockIcon } from '@/assets/Partner/Benefits/stock-icon.svg';
 
 
 //about - Overview
-export {default as AboutOverViewHero} from '@/assets/About/Overview/Hero.png'
-export {default as AboutJourney} from '@/assets/About/Overview/journey.png'
+export {default as AboutOverViewHero} from '@/assets/About/overview/Hero.png'
+export {default as AboutJourney} from '@/assets/About/overview/journey.png'
 
 
 //about - companies

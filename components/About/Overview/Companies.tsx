@@ -8,6 +8,7 @@ import { Company, MobileCompany } from '../../Reusable/icons';
 const Companies = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [allContentShown, setAllContentShown] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
   const containerRef = useRef(null);
   
   const { scrollYProgress } = useScroll({
@@ -15,15 +16,32 @@ const Companies = () => {
     offset: ["start start", "end end"]
   });
 
+  // Check if we're in browser environment and set mobile state
+  useEffect(() => {
+    const checkIsMobile = () => {
+      if (typeof window !== 'undefined') {
+        return window.innerWidth < 768; // md breakpoint
+      }
+      return false;
+    };
+    
+    setIsMobile(checkIsMobile());
+    
+    const handleResize = () => {
+      setIsMobile(checkIsMobile());
+    };
+    
+    if (typeof window !== 'undefined') {
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+    }
+  }, []);
+
   // Auto-change content for mobile every 2.5 seconds
   useEffect(() => {
     let interval: string | number | NodeJS.Timeout | undefined;
     
-    const checkIsMobile = () => {
-      return window.innerWidth < 768; // md breakpoint
-    };
-    
-    if (checkIsMobile()) {
+    if (isMobile) {
       interval = setInterval(() => {
         setCurrentIndex((prevIndex) => 
           (prevIndex + 1) % companiesContent.length
@@ -34,13 +52,13 @@ const Companies = () => {
     return () => {
       if (interval) clearInterval(interval);
     };
-  }, []);
+  }, [isMobile]);
 
   // Change content based on scroll progress for desktop only
   useEffect(() => {
     const unsubscribe = scrollYProgress.on("change", (latest) => {
       // Only apply scroll-based changes on desktop
-      if (window.innerWidth >= 768) {
+      if (!isMobile) {
         // Calculate index based on scroll progress
         const totalSteps = companiesContent.length;
         const stepSize = 1 / totalSteps;
@@ -64,7 +82,7 @@ const Companies = () => {
     });
 
     return () => unsubscribe();
-  }, [scrollYProgress, currentIndex]);
+  }, [scrollYProgress, currentIndex, isMobile]);
 
   return (
     <div ref={containerRef} className="relative md:h-[400vh] h-auto md:py-20 py-30 ">
@@ -73,7 +91,7 @@ const Companies = () => {
         <motion.div 
           className="h-full flex flex-col justify-center "
           animate={{
-            y: window.innerWidth >= 768 && allContentShown ? -100 : 0,
+            y: !isMobile && allContentShown ? -100 : 0,
             transition: { duration: 0.8, ease: "easeInOut" }
           }}
         >

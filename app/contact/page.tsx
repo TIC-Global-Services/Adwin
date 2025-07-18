@@ -1,4 +1,5 @@
 
+import HaveAQuery from '@/components/Contact/HaveAQuery'
 import StoreLocator from '@/components/Contact/StoreLocator'
 import DynamicHero from '@/components/Reusable/DynamicHero'
 import { ContactHeroImg } from '@/components/Reusable/icons'

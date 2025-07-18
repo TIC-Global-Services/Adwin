@@ -56,7 +56,7 @@ const Industries = () => {
     }, []);
 
     return (
-        <div className="flex flex-col items-center w-full py-12 md:py-20">
+        <div className="flex flex-col items-center w-full py-12 md:py-20 md:px-0 px-[15px]">
             <motion.div
                 ref={titleRef}
                 initial={{ opacity: 0, y: 30 }}
@@ -64,10 +64,10 @@ const Industries = () => {
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 className="flex flex-row justify-between items-center w-full mb-8"
             >
-                <h1 className="text-[#151414] text-[18px] sm:text-[24px] md:text-[36px] lg:text-[42px] xl:text-[46px] font-archivo font-semibold px-20">
+                <h1 className="text-[#151414] text-[18px]  md:text-[36px] lg:text-[42px] xl:text-[46px] font-archivo font-semibold md:px-20">
                     Industries we serve
                 </h1>
-                <div className="flex flex-row items-center space-x-3 px-20">
+                <div className="flex flex-row items-center space-x-3 md:px-20">
                     <button
                         onClick={scrollLeft}
                         className={`w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-[16px] transition-all duration-200 ${
@@ -92,9 +92,9 @@ const Industries = () => {
             </motion.div>
 
             {/* Scrollable container */}
-            <div className="w-full relative px-10">
-                <div className="bg-gradient-to-r from-white via-white/50 to-transparent w-[15vw] sm:w-[2vw] h-full absolute left-10 top-0 z-10 pointer-events-none" />
-                <div className="bg-gradient-to-l from-white via-white/50 to-transparent w-[15vw] sm:w-[2vw] h-full absolute right-10 top-0 z-10 pointer-events-none" />
+            <div className="w-full relative md:px-10">
+                {/* <div className="bg-gradient-to-r from-white via-white/50 to-transparent w-[15vw] sm:w-[2vw] h-full absolute left-10 top-0 z-10 pointer-events-none" />
+                <div className="bg-gradient-to-l from-white via-white/50 to-transparent w-[15vw] sm:w-[2vw] h-full absolute right-10 top-0 z-10 pointer-events-none" /> */}
                 <div
                     ref={scrollContainerRef}
                     className="flex gap-6 overflow-x-auto scrollbar-hide pb-4 snap-x snap-mandatory px-10"

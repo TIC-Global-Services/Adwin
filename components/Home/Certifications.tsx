@@ -9,41 +9,48 @@ const Certifications = () => {
   const isTitleInView = useInView(titleRef, { once: false, margin: '-50px 0px' });
 
   return (
-    <div className="md:mt-[180px] mt-[60px] md:mb-[180px] mb-[100px] overflow-x-hidden md:px-0 px-[15px] ">
-     
-      <motion.div
-          ref={titleRef}
-          initial={{ opacity: 0, y: 30 }}
-          animate={isTitleInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="flex md:flex-row flex-col w-full justify-between md:items-start items-center max-w-5xl mx-auto md:space-x-60"
+    <div className="md:mt-[120px] mt-[40px] md:mb-[120px] mb-[80px] overflow-x-hidden md:px-0 px-[15px] ">
 
-        >
-          <h1 className="font-archivo text-[18px] text-[#4A4A4A] mb:0 mb-5 font-regular whitespace-nowrap">
+      <motion.div
+        ref={titleRef}
+        initial={{ opacity: 0, y: 30 }}
+        animate={isTitleInView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="flex md:flex-row flex-col w-full justify-between md:items-start items-center max-w-4xl mx-auto md:space-x-40"
+
+      >
+        <h1 className="font-archivo text-[28px] text-[#4A4A4A] mb:0 mb-5 font-regular whitespace-nowrap">
           Our Certifications
-          </h1>
-          <p className="text-[#151414] font-light xl:text-[18px] lg:text-[18px] md:text-[18px] md:leading-[20px] text-[16px] xl:leading-[29px]  md:text-start text-center">
+        </h1>
+        <p className="text-[#151414] font-light xl:text-[18px] lg:text-[18px] md:text-[18px] md:leading-[20px] text-[16px] xl:leading-[29px]  md:text-start text-center">
           At Adwin, quality is built into every process. Our manufacturing
           systems are internationally certified, ensuring that our products meet
           the highest global standards for safety, performance, and
           environmental responsibility.
-          </p>
-        </motion.div>
+        </p>
+      </motion.div>
+
+      {/* desktop */}
       <div className='hidden md:block'>
-        <div className="flex flex-row w-full justify-center  items-center max-w-5xl mx-auto mt-[100px]">
+        <div className="flex flex-row flex-wrap justify-center items-start gap-x-45 gap-y-12 w-full max-w-7xl mx-auto mt-[100px] px-4">
           {certifications.map((Images, index) => (
-            <div key={index} className="flex flex-col items-center justify-center ">
-              <Image src={Images.image} alt="Images" className="w-30 h-30" />
-              <p className="text-[#151414] font-light text-[16px] leading-[24px] mt-[10px] text-center">
+            <div key={index} className="flex flex-col items-center text-center ">
+              <Image
+                src={Images.image}
+                alt="Images"
+                className="w-30 h-30 object-contain "
+              />
+              <p className="text-[#151414] font-regular font-archivo text-[16px] leading-[24px] mt-4 max-w-[180px]">
                 {Images.content}
               </p>
             </div>
           ))}
         </div>
+
       </div>
 
 
-
+      {/* mobile */}
       <div className="md:hidden overflow-x-auto scrollbar-hide mt-8">
         <div className="flex gap-4 px-[15px]">
           {certifications.map((Images, index) => (

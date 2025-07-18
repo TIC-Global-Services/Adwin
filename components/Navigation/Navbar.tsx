@@ -123,7 +123,7 @@ const Navbar: React.FC = () => {
                   <button
                     onClick={() => handleDropdownToggle(index)}
                     className={`flex items-center gap-1 text-[16px] font-regular text-white transition-all duration-300 hover:bg-[#005F20] hover:px-4 hover:py-2 hover:rounded-full ${
-                      isActive || activeDropdown === index ? 'bg-[#005F20] px-4 py-2 rounded-full' : ''
+                      isActive || activeDropdown === index ? 'bg-[#005F20] px-4 py-2 rounded-full text-white' : ''
                     }`}
                   >
                     {item.title}
@@ -138,8 +138,8 @@ const Navbar: React.FC = () => {
                   // For items without dropdown, use Link
                   <Link 
                     href={item.link} 
-                    className={`flex items-center gap-1 text-[16px] font-regular transition-all duration-300 hover:bg-[#005F20] hover:px-4 hover:py-2 hover:rounded-full ${
-                      isActive ? 'bg-[#005F20] px-4 py-2 rounded-full' : ''
+                    className={`flex items-center gap-1 text-[16px] text-white font-regular transition-all duration-300 hover:bg-[#005F20] hover:px-4 hover:py-2 hover:rounded-full ${
+                      isActive ? 'bg-[#005F20] text-white px-4 py-2 rounded-full' : ''
                     }`}
                   >
                     {item.title}
@@ -153,7 +153,7 @@ const Navbar: React.FC = () => {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: -10 }}
                       transition={{ duration: 0.2 }}
-                      className="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-white rounded-[16px] border py-4 px-4 z-50 w-80 inline-block whitespace-nowrap text-center shadow-lg"
+                      className="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-white rounded-[16px]  py-4 px-4 z-50 w-80 inline-block whitespace-nowrap text-center shadow-lg"
                     >
                       {item.dropdown?.map((dropdownItem: DropdownItem) => (
                         <Link

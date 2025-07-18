@@ -6,30 +6,33 @@ import { InnovationContents } from '../Contents'
 import { motion, useInView } from 'framer-motion'
 
 const Innovation = () => {
-    const titleRef = useRef(null);
-    const imageRef = useRef(null);
-    const containerRef = useRef(null);
-    const leftImageRef = useRef(null);
-    const contentItemsRef = useRef([]);
+    const titleRef = useRef<HTMLDivElement>(null);
+    const imageRef = useRef<HTMLDivElement>(null);
+    const containerRef = useRef<HTMLDivElement>(null);
+    const leftImageRef = useRef<HTMLDivElement>(null);
 
-    // Create individual refs for each content item
-    const itemRefs = useRef(InnovationContents.map(() => React.createRef()));
+    // Create individual refs for each content item with proper typing
+    const itemRefs = useRef<(HTMLDivElement | null)[]>([]);
 
     const isTitleInView = useInView(titleRef, { once: false, margin: '-50px 0px' });
     const isImageInView = useInView(imageRef, { once: false, margin: '-100px 0px' });
     const isContainerInView = useInView(containerRef, { once: false, margin: '-150px 0px' });
     const isLeftImageInView = useInView(leftImageRef, { once: false, margin: '-100px 0px' });
 
-    const itemInViewStates = InnovationContents.map((_, index) => 
-        useInView(itemRefs.current[index], { once: false, margin: '-80px 0px' })
-    );
+    // Initialize the refs array with proper length
+    if (itemRefs.current.length !== InnovationContents.length) {
+        itemRefs.current = Array(InnovationContents.length).fill(null);
+    }
+
+    const itemInViewStates = InnovationContents.map((_, index) => {
+        // Create a ref object for useInView
+        const itemRef = { current: itemRefs.current[index] };
+        return useInView(itemRef, { once: false, margin: '-80px 0px' });
+    });
 
     // Set up ref array for content items
     const setItemRef = (el: HTMLDivElement | null, index: number) => {
-        contentItemsRef.current[index] = el;
-        if (itemRefs.current[index]) {
-            itemRefs.current[index].current = el;
-        }
+        itemRefs.current[index] = el;
     };
     
     return (

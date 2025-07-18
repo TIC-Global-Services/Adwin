@@ -1,4 +1,4 @@
-import Built from '@/components/About/Manufacturing/Built'
+import Built from '@/components/About/manufacturing/Built'
 import DynamicHero from '@/components/Reusable/DynamicHero'
 import { ManufacturingHero } from '@/components/Reusable/icons'
 import React from 'react'

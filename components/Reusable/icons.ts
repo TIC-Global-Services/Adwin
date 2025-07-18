@@ -77,15 +77,15 @@ export {default as Director5} from '@/assets/About/companies/dir5.png';
 
 
 // About - sustainability
-export {default as Sustainability1} from '@/assets/About/Sustainabilty/certificate2.png';
+export {default as Sustainability1} from '@/assets/About/sustainabilty/certificate2.png';
 
 // About - Manufacturing
-export {default as ManufacturingHero} from '@/assets/About/Manufacturing/Frame 1171274965 (2) (1).png';
+export {default as ManufacturingHero} from '@/assets/About/manufacturing/Frame 1171274965 (2) (1).png';
 
 // About - manufacturing built
-export {default as BuiltImage} from '@/assets/About/Manufacturing/built.png';
-export {default as BuiltImage2} from '@/assets/About/Manufacturing/built2.png';
-export {default as BuiltImage3} from '@/assets/About/Manufacturing/built3.png';
+export {default as BuiltImage} from '@/assets/About/manufacturing/built.png';
+export {default as BuiltImage2} from '@/assets/About/manufacturing/built2.png';
+export {default as BuiltImage3} from '@/assets/About/manufacturing/built3.png';
 
 //About - Research
 

@@ -106,7 +106,7 @@ const Navbar: React.FC = () => {
           <Image src={Logo} alt="logo" width={1000} height={1000} className='w-[139px] h-[26px]' />
         </Link>
         
-        <div className="hidden lg:flex gap-8 items-center">
+        <div className="hidden xl:flex gap-8 items-center">
           {NavbarContents.map((item: NavItem, index: number) => {
             const hasDropdown = item.dropdown && item.dropdown.length > 0;
             const isActive = isNavItemActive(item);
@@ -176,7 +176,7 @@ const Navbar: React.FC = () => {
           })}
         </div>
 
-        <div className='hidden lg:flex'>
+        <div className='hidden xl:flex'>
           <Link
             href="/contact"
             className={`flex items-center justify-center w-[121px] h-[44px] rounded-[8px] text-sm font-medium shadow-md transition duration-200 hover:scale-105 transition-all duration-300 ease-in-out ${
@@ -191,7 +191,7 @@ const Navbar: React.FC = () => {
       
         <button
           onClick={toggleMobileMenu}
-          className="lg:hidden mobile-menu-button p-2 rounded-md text-white hover:text-[#005F20] hover:bg-gray-100 transition-colors duration-200"
+          className="xl:hidden mobile-menu-button p-2 rounded-md text-white hover:text-[#005F20] hover:bg-gray-100 transition-colors duration-200"
           aria-label="Toggle mobile menu"
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -206,7 +206,7 @@ const Navbar: React.FC = () => {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="lg:hidden bg-white rounded-[16px] border mt-2 py-4 px-4 shadow-md"
+            className="xl:hidden bg-white rounded-[16px]  mt-2 py-4 px-4 shadow-md"
           >
             <div className="space-y-2">
               {NavbarContents.map((item: NavItem, index: number) => {

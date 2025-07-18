@@ -9,17 +9,17 @@ const Sustainability = () => {
   const isTitleInView = useInView(titleRef, { once: false, margin: '-50px 0px' });
 
   return (
-    <div className='flex flex-col justify-center items-center text-center md:mb-50 md:mt-50 overflow-x-hidden'>
+    <div className='flex flex-col justify-center items-center text-center md:mb-50 md:mt-50 mt-15 mb-20 overflow-x-hidden'>
       <motion.div
         ref={titleRef}
         initial={{ opacity: 0, y: 30 }}
         animate={isTitleInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.8, ease: "easeOut" }}
         className='max-w-3xl '>
-        <h1 className='text-[#151414] text-[42px]'>
+        <h1 className='text-[#151414] xl:text-[42px] lg:text-[35px] md:text-[30px] text-[16px] '>
           Sustainability Commitment
         </h1>
-        <p className='text-[#4A4A4A] text-[16px] leading-[24px]'>
+        <p className='text-[#4A4A4A] md:text-[16px] text-[10px]  leading-[24px]'>
           We believe in responsible manufacturing. Our processes follow eco-friendly protocols and energy efficiency measures, with certifications in
         </p>
       </motion.div>

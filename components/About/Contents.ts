@@ -71,13 +71,11 @@ export const BuildContents = [
     },
     {
         image: BuiltImage2,
-
         name:'Unit II – Biratnagar, Nepal',
         description:'Supporting demand across the South Asian market.',
     },
     {
         image: BuiltImage3,
-
         name:'Unit III – Sri Lanka (Coming in 2025)',
         description:'Our expansion into international manufacturing.'
     }

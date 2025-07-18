@@ -27,7 +27,7 @@ const Directors = () => {
                     Our leadership combines decades of industry experience with a shared vision to transform the way India and emerging markets access clean, reliable power.
                 </p>
             </motion.div>
-            <div className="overflow-x-auto scroll-snap-x scrollbar-hide group mt-25">
+            <div className="overflow-x-auto scroll-snap-x scrollbar-hide group md:mt-25 mt-10">
                 <motion.div
                     ref={imageRef}
                     initial={{ opacity: 0, y: 30 }}

@@ -88,7 +88,7 @@ export {default as BuiltImage2} from '@/assets/About/manufacturing/built2.png';
 export {default as BuiltImage3} from '@/assets/About/manufacturing/built3.png';
 
 //ABout - manufacturing - Scrolling 
-export {default as MapBg} from '@/assets/About/Manufacturing/BGMap.png';
+export {default as MapBg} from '@/assets/About/manufacturing/BGMap.png';
 
 
 //About - Research

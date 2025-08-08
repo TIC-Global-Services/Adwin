@@ -8,6 +8,8 @@ interface FAQItem {
   answer: string;
 }
 
+
+
 // Sample FAQ data with lorem ipsum
 const faqData: FAQItem[] = [
   {
@@ -47,8 +49,6 @@ const FAQContent: React.FC = () => {
   return (
     <div className="min-h-screen py-8 sm:py-12 md:py-20">
       <div className="max-w-4xl mx-auto px-4 md:px-20">
-        
-
         {/* FAQ List */}
         <div className="space-y-4">
           {faqData.map((faq, index) => (
@@ -57,8 +57,7 @@ const FAQContent: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className={` rounded-lg border border-gray-100 overflow-hidden ${
-                  activeIndex === index ? 'bg-[#ECFCE8]' : 'hover:bg-gray-50'
+              className={` rounded-lg border border-gray-100 overflow-hidden ${activeIndex === index ? 'bg-[#ECFCE8]' : 'hover:bg-gray-50'
                 }`}
             >
               <button

@@ -87,6 +87,10 @@ export {default as BuiltImage} from '@/assets/About/manufacturing/built.png';
 export {default as BuiltImage2} from '@/assets/About/manufacturing/built2.png';
 export {default as BuiltImage3} from '@/assets/About/manufacturing/built3.png';
 
+//ABout - manufacturing - Scrolling 
+export {default as MapBg} from '@/assets/About/Manufacturing/BGMap.png';
+
+
 //About - Research
 
 export {default as ReseachHero} from '@/assets/About/research/Frame 1171274965 (3).png';
@@ -102,6 +106,22 @@ export {default as Icon4} from '@/assets/About/research/innovation/logos/icon4.p
 export {default as Icon5} from '@/assets/About/research/innovation/logos/icon5.png';
 
 
+//About - Working Icons
+export {default as WorkIcon1} from '@/assets/About/research/Working/Icon1.png';
+export {default as WorkIcon2} from '@/assets/About/research/Working/Icon2.png';
+export {default as WorkIcon3} from '@/assets/About/research/Working/Icon3.png';
+export {default as WorkIcon4} from '@/assets/About/research/Working/Icon4.png';
+export {default as WorkIcon5} from '@/assets/About/research/Working/Icon5.png';
+//bg-icons
+export {default as WorkBgIcon1} from '@/assets/About/research/Working/bgicon1.png';
+export {default as WorkBgIcon2} from '@/assets/About/research/Working/bgicon2.png';
+export {default as WorkBgIcon3} from '@/assets/About/research/Working/bgicon3.png';
+export {default as WorkBgIcon4} from '@/assets/About/research/Working/bgicon4.png';
+export {default as WorkBgIcon5} from '@/assets/About/research/Working/bgicon5.png';
+
+
+
+
 export {default as ProductHero} from '@/assets/Product/HeroProduct.png';
 
 
@@ -112,6 +132,23 @@ export {default as image1} from '@/assets/About/journey/2010.png';
 
 //Service 
 export {default as HeroServicePage} from '@/assets/Service/Hero.png';
+
+
+
+
+
+
+
+
+
+
+//Tools - Solar Calculator
+export {default as SolarCalculatorHero} from '@/assets/Tools/Solar/HeroSolar.png';
+
+
+//Tools - Load Calculator
+export {default as LoadCalculatorHero} from '@/assets/Tools/Load/LoadHero.png';
+
 
 // Footer 
 export {default as ArrowRight } from '@/assets/Footer/upRight.png'; 

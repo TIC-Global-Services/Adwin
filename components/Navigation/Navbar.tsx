@@ -47,11 +47,18 @@ const NavbarContents: NavItem[] = [
 ];
 
 const Navbar: React.FC = () => {
-  const pathname = usePathname(); // Get current pathname
+  const pathname = usePathname();
   const [isVisible, setIsVisible] = useState<boolean>(true);
   const [activeDropdown, setActiveDropdown] = useState<number | null>(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
   const [mobileActiveDropdown, setMobileActiveDropdown] = useState<number | null>(null);
+
+  // Close mobile menu when pathname changes
+  useEffect(() => {
+    setIsMobileMenuOpen(false);
+    setMobileActiveDropdown(null);
+    setActiveDropdown(null);
+  }, [pathname]);
 
   // Function to check if a nav item is active
   const isNavItemActive = (item: NavItem): boolean => {
@@ -91,6 +98,12 @@ const Navbar: React.FC = () => {
     setMobileActiveDropdown(null);
   };
 
+  // Handle mobile link clicks - close menu immediately
+  const handleMobileLinkClick = (): void => {
+    setIsMobileMenuOpen(false);
+    setMobileActiveDropdown(null);
+  };
+
   return (
     <motion.nav 
       initial={{ y: 0, opacity: 1 }}
@@ -98,11 +111,11 @@ const Navbar: React.FC = () => {
         y: isVisible ? 0 : -100,
         opacity: isVisible ? 1 : 0,
       }}
-      transition={{ duration: 0.3, ease: 'easeInOut' }}
+      transition={{ duration: 0.2, ease: 'easeInOut' }} // Reduced from 0.3 to 0.2
       className="absolute top-8 left-1/2 transform -translate-x-1/2 w-full px-10 z-[100] rounded-2xl font-open-sans"
     >
       <div className="flex justify-between items-center py-4">
-        <Link href="/" className="flex gap-2 items-center">
+        <Link href="/" className="flex gap-2 items-center" onClick={handleMobileLinkClick}>
           <Image src={Logo} alt="logo" width={1000} height={1000} className='w-[139px] h-[26px]' />
         </Link>
         
@@ -122,14 +135,14 @@ const Navbar: React.FC = () => {
                   // For items with dropdown, render as button
                   <button
                     onClick={() => handleDropdownToggle(index)}
-                    className={`flex items-center gap-1 text-[16px] font-regular text-white transition-all duration-300 hover:bg-[#005F20] hover:px-4 hover:py-2 hover:rounded-full ${
+                    className={`flex items-center gap-1 text-[16px] font-regular text-white transition-all duration-200 hover:bg-[#005F20] hover:px-4 hover:py-2 hover:rounded-full ${
                       isActive || activeDropdown === index ? 'bg-[#005F20] px-4 py-2 rounded-full text-white' : ''
                     }`}
                   >
                     {item.title}
                     <ChevronDown 
                       size={16} 
-                      className={`transform transition-transform duration-200 ${
+                      className={`transform transition-transform duration-150 ${
                         activeDropdown === index ? 'rotate-180' : ''
                       }`}
                     />
@@ -138,7 +151,7 @@ const Navbar: React.FC = () => {
                   // For items without dropdown, use Link
                   <Link 
                     href={item.link} 
-                    className={`flex items-center gap-1 text-[16px] text-white font-regular transition-all duration-300 hover:bg-[#005F20] hover:px-4 hover:py-2 hover:rounded-full ${
+                    className={`flex items-center gap-1 text-[16px] text-white font-regular transition-all duration-200 hover:bg-[#005F20] hover:px-4 hover:py-2 hover:rounded-full ${
                       isActive ? 'bg-[#005F20] text-white px-4 py-2 rounded-full' : ''
                     }`}
                   >
@@ -152,14 +165,14 @@ const Navbar: React.FC = () => {
                       initial={{ opacity: 0, y: -10 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: -10 }}
-                      transition={{ duration: 0.2 }}
-                      className="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-white rounded-[16px]  py-4 px-4 z-50 w-80 inline-block whitespace-nowrap text-center shadow-lg"
+                      transition={{ duration: 0.15 }} // Reduced from 0.2
+                      className="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-white rounded-[16px] py-4 px-4 z-50 w-80 inline-block whitespace-nowrap text-center shadow-lg"
                     >
                       {item.dropdown?.map((dropdownItem: DropdownItem) => (
                         <Link
                           key={dropdownItem.title}
                           href={dropdownItem.link}
-                          className={`block px-4 py-2 text-sm font-medium rounded-[8px] transition-colors duration-200 mb-1 ${
+                          className={`block px-4 py-2 text-sm font-medium rounded-[8px] transition-colors duration-150 mb-1 ${
                             pathname === dropdownItem.link 
                               ? 'bg-[#ECFCE8] text-[#005F20]' 
                               : 'text-gray-700 hover:bg-[#ECFCE8] hover:text-[#005F20]'
@@ -179,7 +192,7 @@ const Navbar: React.FC = () => {
         <div className='hidden xl:flex'>
           <Link
             href="/contact"
-            className={`flex items-center justify-center w-[121px] h-[44px] rounded-[8px] text-sm font-medium shadow-md transition duration-200 hover:scale-105 transition-all duration-300 ease-in-out ${
+            className={`flex items-center justify-center w-[121px] h-[44px] rounded-[8px] text-sm font-medium shadow-md transition duration-150 hover:scale-105 ${
               pathname === '/contact' 
                 ? 'bg-[#ECFCE8] text-[#005F20]' 
                 : 'text-[#005F20] bg-white hover:bg-[#ECFCE8] hover:text-[#003C14]'
@@ -191,7 +204,7 @@ const Navbar: React.FC = () => {
       
         <button
           onClick={toggleMobileMenu}
-          className="xl:hidden mobile-menu-button p-2 rounded-md text-white hover:text-[#005F20] hover:bg-gray-100 transition-colors duration-200"
+          className="xl:hidden mobile-menu-button p-2 rounded-md text-white hover:text-[#005F20] hover:bg-gray-100 transition-colors duration-150 cursor-pointer"
           aria-label="Toggle mobile menu"
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -205,8 +218,8 @@ const Navbar: React.FC = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.3 }}
-            className="xl:hidden bg-white rounded-[16px]  mt-2 py-4 px-4 shadow-md"
+            transition={{ duration: 0.2 }} // Reduced from 0.3
+            className="xl:hidden bg-white rounded-[16px] mt-2 py-4 px-4 shadow-md"
           >
             <div className="space-y-2">
               {NavbarContents.map((item: NavItem, index: number) => {
@@ -220,7 +233,7 @@ const Navbar: React.FC = () => {
                         // For items with dropdown
                         <button
                           onClick={() => handleMobileDropdownToggle(index)}
-                          className={`flex items-center justify-between py-2 px-3 text-[16px] font-medium transition-colors duration-200 flex-1 text-left w-full rounded-[6px] ${
+                          className={`flex items-center justify-between py-2 px-3 text-[16px] font-medium transition-colors duration-150 flex-1 text-left w-full rounded-[6px] ${
                             isActive 
                               ? 'text-[#005F20] ' 
                               : 'text-gray-700 hover:text-[#005F20] hover:bg-[#ECFCE8]'
@@ -229,7 +242,7 @@ const Navbar: React.FC = () => {
                           <span>{item.title}</span>
                           <ChevronDown
                             size={16}
-                            className={`transform transition-transform duration-200 ${
+                            className={`transform transition-transform duration-150 ${
                               mobileActiveDropdown === index ? 'rotate-180' : ''
                             }`}
                           />
@@ -238,7 +251,8 @@ const Navbar: React.FC = () => {
                         // For items without dropdown
                         <Link
                           href={item.link}
-                          className={`flex items-center gap-1 py-2 px-3 text-[16px] font-medium transition-colors duration-200 w-full rounded-[6px] ${
+                          onClick={handleMobileLinkClick}
+                          className={`flex items-center gap-1 py-2 px-3 text-[16px] font-medium transition-colors duration-150 w-full rounded-[6px] ${
                             isActive 
                               ? 'text-[#005F20] bg-[#ECFCE8]' 
                               : 'text-gray-700 hover:text-[#005F20] hover:bg-[#ECFCE8]'
@@ -255,14 +269,15 @@ const Navbar: React.FC = () => {
                           initial={{ opacity: 0, height: 0 }}
                           animate={{ opacity: 1, height: 'auto' }}
                           exit={{ opacity: 0, height: 0 }}
-                          transition={{ duration: 0.2 }}
+                          transition={{ duration: 0.15 }} // Reduced from 0.2
                           className="mt-2 space-y-1 rounded-[8px] p-2"
                         >
                           {item.dropdown?.map((dropdownItem: DropdownItem) => (
                             <Link
                               key={dropdownItem.title}
                               href={dropdownItem.link}
-                              className={`block px-3 py-2 text-sm font-medium rounded-[6px] transition-colors duration-200 ${
+                              onClick={handleMobileLinkClick}
+                              className={`block px-3 py-2 text-sm font-medium rounded-[6px] transition-colors duration-150 ${
                                 pathname === dropdownItem.link 
                                   ? 'bg-[#ECFCE8] text-[#005F20]' 
                                   : 'text-[#606060] hover:bg-[#ECFCE8] hover:text-[#005F20]'
@@ -283,7 +298,8 @@ const Navbar: React.FC = () => {
                 <div className="flex items-center justify-between">
                   <Link
                     href="/contact"
-                    className={`flex items-center gap-1 py-2 px-3 text-[16px] font-medium transition-colors duration-200 w-full rounded-[6px] ${
+                    onClick={handleMobileLinkClick}
+                    className={`flex items-center gap-1 py-2 px-3 text-[16px] font-medium transition-colors duration-150 w-full rounded-[6px] ${
                       pathname === '/contact' 
                         ? 'text-[#005F20] bg-[#ECFCE8]' 
                         : 'text-gray-700 hover:text-[#005F20] hover:bg-[#ECFCE8]'

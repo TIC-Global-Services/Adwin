@@ -1,5 +1,6 @@
 
 import Built from '@/components/About/Manufacturing/Built'
+import ScrollingText from '@/components/About/Manufacturing/ScrollingText'
 import DynamicHero from '@/components/Reusable/DynamicHero'
 import { ManufacturingHero } from '@/components/Reusable/icons'
 import React from 'react'
@@ -15,6 +16,7 @@ const page = () => {
                 subtitle='Excellence'
             />
             <Built />
+            <ScrollingText />
  </div>
  
   )

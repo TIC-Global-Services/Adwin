@@ -3,6 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useForm } from 'react-hook-form';
 
+
 const PartnerApply = () => {
     const {
         register,
@@ -72,7 +73,7 @@ const PartnerApply = () => {
                     className="mb-10 text-center"
                 >
                     <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2">
-                        How to Apply
+                        How to <span className=' text-[#005F20]'>Apply</span> 
                     </h1>
                     <p className="text-gray-600">
                         A dedicated Business Development Manager will get in touch with you.
@@ -89,7 +90,7 @@ const PartnerApply = () => {
                 >
                     {/* ----- Personal / Company ----- */}
                     <div>
-                        <label className={labelClass}>First Name *</label>
+                        <label className={labelClass}>First Name <span className=' text-red-500'>*</span></label>
                         <input
                             {...register('firstName', { required: true })}
                             className={inputClass}
@@ -98,7 +99,7 @@ const PartnerApply = () => {
                     </div>
 
                     <div>
-                        <label className={labelClass}>Last Name *</label>
+                        <label className={labelClass}>Last Name <span className=' text-red-500'>*</span></label>
                         <input
                             {...register('lastName', { required: true })}
                             className={inputClass}
@@ -107,7 +108,7 @@ const PartnerApply = () => {
                     </div>
 
                     <div>
-                        <label className={labelClass}>Email *</label>
+                        <label className={labelClass}>Email <span className=' text-red-500'>*</span></label>
                         <input
                             type="email"
                             {...register('email', { required: true })}
@@ -117,7 +118,7 @@ const PartnerApply = () => {
                     </div>
 
                     <div>
-                        <label className={labelClass}>Phone Number *</label>
+                        <label className={labelClass}>Phone Number <span className=' text-red-500'>*</span></label>
                         <input
                             type="tel"
                             {...register('phone', { required: true })}
@@ -127,19 +128,19 @@ const PartnerApply = () => {
                     </div>
 
                     <div>
-                        <label className={labelClass}>City *</label>
+                        <label className={labelClass}>City <span className=' text-red-500'>*</span></label>
                         <input {...register('city', { required: true })} className={inputClass} />
                         {errors.city && <span className="text-red-500 text-xs">Required</span>}
                     </div>
 
                     <div>
-                        <label className={labelClass}>State *</label>
+                        <label className={labelClass}>State <span className=' text-red-500'>*</span></label>
                         <input {...register('state', { required: true })} className={inputClass} />
                         {errors.state && <span className="text-red-500 text-xs">Required</span>}
                     </div>
 
                     <div>
-                        <label className={labelClass}>ZIP / Pin Code *</label>
+                        <label className={labelClass}>ZIP / Pin Code <span className=' text-red-500'>*</span></label>
                         <input
                             {...register('zip', { required: true })}
                             className={inputClass}
@@ -148,14 +149,14 @@ const PartnerApply = () => {
                     </div>
 
                     <div>
-                        <label className={labelClass}>Company / Firm Name *</label>
+                        <label className={labelClass}>Company / Firm Name <span className=' text-red-500'>*</span></label>
                         <input {...register('company', { required: true })} className={inputClass} />
                         {errors.company && <span className="text-red-500 text-xs">Required</span>}
                     </div>
 
                     {/* ----- Dropdowns ----- */}
                     <div>
-                        <label className={labelClass}>Are you already a distributor? *</label>
+                        <label className={labelClass}>Are you already a distributor? <span className=' text-red-500'>*</span></label>
                         <select {...register('alreadyDistributor', { required: true })} className={inputClass}>
                             <option value="">Select</option>
                             {yesNoOptions.map((opt) => (
@@ -166,7 +167,7 @@ const PartnerApply = () => {
                     </div>
 
                     <div>
-                        <label className={labelClass}>Years in Industry *</label>
+                        <label className={labelClass}>Years in Industry <span className=' text-red-500'>*</span></label>
                         <select {...register('yearsInIndustry', { required: true })} className={inputClass}>
                             <option value="">Select</option>
                             {yearsOptions.map((opt) => (
@@ -177,7 +178,7 @@ const PartnerApply = () => {
                     </div>
 
                     <div>
-                        <label className={labelClass}>Firm / Company Type *</label>
+                        <label className={labelClass}>Firm / Company Type <span className=' text-red-500'>*</span></label>
                         <select {...register('firmType', { required: true })} className={inputClass}>
                             <option value="">Select</option>
                             {firmTypeOptions.map((opt) => (
@@ -188,7 +189,7 @@ const PartnerApply = () => {
                     </div>
 
                     <div>
-                        <label className={labelClass}>Applying Distributorship For *</label>
+                        <label className={labelClass}>Applying Distributorship For <span className=' text-red-500'>*</span></label>
                         <select {...register('applyingFor', { required: true })} className={inputClass}>
                             <option value="">Select</option>
                             {applyingForOptions.map((opt) => (
@@ -199,7 +200,7 @@ const PartnerApply = () => {
                     </div>
 
                     <div>
-                        <label className={labelClass}>Annual Turnover *</label>
+                        <label className={labelClass}>Annual Turnover <span className=' text-red-500'>*</span></label>
                         <select {...register('annualTurnover', { required: true })} className={inputClass}>
                             <option value="">Select</option>
                             {turnoverOptions.map((opt) => (
@@ -210,7 +211,7 @@ const PartnerApply = () => {
                     </div>
 
                     <div>
-                        <label className={labelClass}>Number of Existing Dealers *</label>
+                        <label className={labelClass}>Number of Existing Dealers <span className=' text-red-500'>*</span></label>
                         <select {...register('noOfDealers', { required: true })} className={inputClass}>
                             <option value="">Select</option>
                             {dealerCountOptions.map((opt) => (
@@ -220,8 +221,8 @@ const PartnerApply = () => {
                         {errors.noOfDealers && <span className="text-red-500 text-xs">Required</span>}
                     </div>
 
-                    <div className="md:col-span-2">
-                        <label className={labelClass}>Do you have a sales team? *</label>
+                    <div>
+                        <label className={labelClass}>Do you have a sales team? <span className=' text-red-500'>*</span></label>
                         <select {...register('salesTeam', { required: true })} className={inputClass}>
                             <option value="">Select</option>
                             {salesTeamOptions.map((opt) => (
@@ -231,19 +232,19 @@ const PartnerApply = () => {
                         {errors.salesTeam && <span className="text-red-500 text-xs">Required</span>}
                     </div>
 
-                    <div className="md:col-span-2">
+                    <div>
                         <label className={labelClass}>Area of Warehouse (Sq Ft)</label>
                         <input {...register('warehouseArea')} className={inputClass} placeholder="e.g. 2500" />
                     </div>
 
                     {/* Submit */}
-                    <div className="md:col-span-2 mt-4">
+                    <div className="md:col-span-2 mt-4 mx-auto">
                         <button
                             type="submit"
-                            className="w-full md:w-auto bg-[#005F20] text-white px-8 py-3 rounded-lg font-semibold
+                            className="w-full md:w-auto bg-[#005F20] text-white px-8 py-3 rounded-lg font-medium
                          hover:bg-[#00461a] transition-colors duration-300"
                         >
-                            Submit Application
+                            Submit
                         </button>
                     </div>
                 </motion.form>

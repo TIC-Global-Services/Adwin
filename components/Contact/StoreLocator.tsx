@@ -135,13 +135,12 @@ const StoreLocator: React.FC = () => {
                         transition={{ duration: 0.6 }}
                         className="text-center mb-10 sm:mb-12 md:mb-16"
                     >
-                        <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-emerald-100 text-emerald-800 rounded-full text-xs sm:text-sm font-medium mb-4">
-                            <Store size={16} />
-                            <span className="uppercase tracking-wider">Dealer / Store Locator</span>
+                        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs sm:text-base font-medium mb-4">
+                            <span>Dealer / Store Locator</span>
                         </div>
                         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-3 md:mb-4 leading-tight">
                             Locate the Nearest
-                            <span className="block text-emerald-600">Dealers</span>
+                            <span className="block text-[#005F20]">Dealers</span>
                         </h1>
                         <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-xl md:max-w-2xl mx-auto">
                             Discover authorized Adwin Battery dealers in your area for expert service and genuine products.

@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import { MdLocationPin as Location } from "react-icons/md";
 import { FaPhone as Phone } from "react-icons/fa6";
 import { IoMailOpen as Mail } from "react-icons/io5";
+import { FaFacebook as FacebookIcon, FaLinkedin as LinkedinIcon } from "react-icons/fa";
+import { FaInstagram as InstaIcon, FaXTwitter as XIcon } from "react-icons/fa6";
 
 const HaveAQuery = () => {
     const contactDetails = [
@@ -79,8 +81,31 @@ const HaveAQuery = () => {
         }
     };
 
+    const socials = [
+        {
+            title: "Facebook",
+            icon: FacebookIcon,
+            slug: ''
+        },
+        {
+            title: "Instagram",
+            icon: InstaIcon,
+            slug: ''
+        },
+        {
+            title: "LinkedIn",
+            icon: LinkedinIcon,
+            slug: ''
+        },
+        {
+            title: "Twitter",
+            icon: XIcon,
+            slug: ''
+        },
+    ]
+
     return (
-        <div className="px-4 sm:px-6 lg:px-20 py-12 md:py-20 bg-gray-50">
+        <div className="px-4 sm:px-6 lg:px-20 py-12 md:py-20 ">
             <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-8 lg:gap-12">
                 {/* Left Section: Title and Contact Details */}
                 <div className="lg:w-[60%] flex flex-col gap-6 justify-between">
@@ -91,6 +116,15 @@ const HaveAQuery = () => {
                         <p className="text-[14px] sm:text-[16px] text-gray-600 mt-2 max-w-lg">
                             Fill in the form or contact us. Our team will get back to you shortly.
                         </p>
+                        <div className=' flex items-center gap-4 py-4'>
+
+                            {socials.map((social, idx) => (
+                                <div key={idx} className=' flex items-center gap-2 bg-[#F8F8F8] rounded-full px-4 py-2'>
+                                    <h1>{social.title}</h1>
+                                    <social.icon />
+                                </div>
+                            ))}
+                        </div>
                     </div>
                     <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
                         {contactDetails.map((detail, index) => (

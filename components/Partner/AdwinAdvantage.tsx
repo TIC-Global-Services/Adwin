@@ -37,7 +37,7 @@ const AdwinAdvantage = () => {
     return (
         <section className="px-4 md:px-20 py-12 md:py-20">
             <motion.div
-                className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-7xl mx-auto"
+                className="grid grid-cols-1 sm:grid-cols-3 gap-6  mx-auto"
                 variants={containerVariants}
                 initial="hidden"
                 whileInView="visible"
@@ -48,8 +48,8 @@ const AdwinAdvantage = () => {
                     className="col-span-1 sm:col-span-3 lg:col-span-1 flex items-start"
                     variants={cardVariants}
                 >
-                    <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800">
-                        The Adwin <span className="text-[#005F20]">Advantage</span>
+                    <h1 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-gray-800">
+                        The Adwin <br /><span className="text-[#005F20]">Advantage</span>
                     </h1>
                 </motion.div>
 

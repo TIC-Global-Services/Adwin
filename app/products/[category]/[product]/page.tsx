@@ -310,9 +310,23 @@ const ProductPage = () => {
                   </span>
                 )}
               </div> */}
-              <h1 className="text-4xl font-bold mb-2 text-gray-900">
-                {product.name}
-              </h1>
+               <h3 className="text-2xl font-semibold text-gray-900">
+  {(() => {
+    const words = product.name.split(" ");
+    if (words.length === 1) {
+      // Only one word → keep normal color
+      return product.name;
+    }
+    const lastWord = words.pop(); // remove last word
+    return (
+      <>
+        {words.join(" ")}{" "}
+        <span className="text-[#005F20]">{lastWord}</span>
+      </>
+    );
+  })()}
+</h3>
+
             </div>
             <p className="text-gray-600 text-lg leading-relaxed">
               {product.desc}

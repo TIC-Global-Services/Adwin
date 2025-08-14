@@ -112,7 +112,7 @@ const Navbar: React.FC = () => {
         opacity: isVisible ? 1 : 0,
       }}
       transition={{ duration: 0.2, ease: 'easeInOut' }} // Reduced from 0.3 to 0.2
-      className="absolute top-8 left-1/2 transform -translate-x-1/2 w-full px-10 z-[100] rounded-2xl font-open-sans"
+      className="absolute top-8 left-1/2 transform -translate-x-1/2 w-full px-15 z-[100] rounded-2xl font-open-sans"
     >
       <div className="flex justify-between items-center py-4">
         <Link href="/" className="flex gap-2 items-center" onClick={handleMobileLinkClick}>

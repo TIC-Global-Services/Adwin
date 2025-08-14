@@ -1,6 +1,6 @@
 
 // data/Products.ts
-import { AgriIcon1, AgriIcon2, AgriIcon3, AgriIcon4, AutoIcon1, AutoIcon2, AutoIcon3, AutoIcon4, BikeIcon1, BikeIcon2, BikeIcon3, BikeIcon4, Icon1, LeadIcon1, LeadIcon2, LeadIcon3, LeadIcon4, LithiumIcon1, LithiumIcon2, LithiumIcon3, LithiumIcon4, OzIcon1, OzIcon2, OzIcon3, OzIcon4, PCUIcon1, PCUIcon2, PCUIcon3, PCUIcon4, ProductHero, RickIcon1, RickIcon2, RickIcon3, RickIcon4, SolarIcon1, SolarIcon2, SolarIcon3, SolarIcon4 } from "@/components/Reusable/icons";
+import { AgriIcon1, AgriIcon2, AgriIcon3, AgriIcon4, AutoIcon1, AutoIcon2, AutoIcon3, AutoIcon4, BikeIcon1, BikeIcon2, BikeIcon3, BikeIcon4, DescImage, FeatureBgImage, Icon1, LeadIcon1, LeadIcon2, LeadIcon3, LeadIcon4, LithiumIcon1, LithiumIcon2, LithiumIcon3, LithiumIcon4, OzIcon1, OzIcon2, OzIcon3, OzIcon4, PCUIcon1, PCUIcon2, PCUIcon3, PCUIcon4, Product1, ProductHero, ProductImage1, ProductImage2, ProductImage3, ProductImage4, RickIcon1, RickIcon2, RickIcon3, RickIcon4, SolarIcon1, SolarIcon2, SolarIcon3, SolarIcon4 } from "@/components/Reusable/icons";
 
 
 export const ProductsData = [
@@ -14,8 +14,8 @@ export const ProductsData = [
       name: "Solar Power Systems",
       Heroimage: Icon1,
       desc: "Harness the power of the sun with Adwin’s comprehensive solar portfolio, from high-efficiency panels to advanced inverters and batteries. Designed for reliability and maximum energy yield, our solutions enable homes and businesses to embrace clean, sustainable energy while reducing carbon footprint",
-      descImage: ProductHero,
-      featureImage: ProductHero,
+      descImage: DescImage,
+      featureImage: FeatureBgImage,
       features: [
         { image: SolarIcon1, name: "Optimized for Indian Solar" },
         { image: SolarIcon2, name: "Seamless Inverter Compatibility" },
@@ -33,7 +33,7 @@ export const ProductsData = [
             "Advanced inverters for efficient energy conversion and grid compatibility",
             "Scalable solutions tailored to residential, commercial, and industrial needs",
           ],
-          Image: ProductHero,
+          Image: ProductImage1,
         },
         {
           id: 2,
@@ -45,7 +45,7 @@ export const ProductsData = [
             "Resistant to wind and snow loads for enhanced reliability",
             "Easy installation and low maintenance",
           ],
-          Image: ProductHero,
+          Image: ProductImage2,
         },
         {
           id: 3,
@@ -57,7 +57,7 @@ export const ProductsData = [
             "Extended battery life with smart charge control",
             "Flexible options for varying power needs and budgets",
           ],
-          Image: ProductHero,
+          Image: ProductImage3,
         },
         {
           id: 4,
@@ -69,7 +69,7 @@ export const ProductsData = [
             "Longer lifecycle and faster charge/discharge rates",
             "Intelligent energy management for optimal usage",
           ],
-          Image: ProductHero,
+          Image: ProductImage4,
         },
       ],
     },
@@ -83,8 +83,8 @@ export const ProductsData = [
       name: "Automobile Batteries ",
       Heroimage: Icon1,
       desc: "Adwin automotive batteries provide powerful, reliable starting and performance capabilities for a wide range of vehicles. Engineered for durability and resistance to vibration and corrosion, these batteries ensure your vehicle operates smoothly in diverse conditions. Maintenance-free designs add convenience and long service life.",
-      descImage: ProductHero,
-      featureImage: ProductHero,
+      descImage: DescImage,
+      featureImage: FeatureBgImage,
       features: [
         { image: AutoIcon1, name: "High cranking power for extreme climates" },
         { image: AutoIcon2, name: "Advanced graphene and calcium alloy tech" },
@@ -102,7 +102,7 @@ export const ProductsData = [
             "Advanced inverters for efficient energy conversion and grid compatibility",
             "Scalable solutions tailored to residential, commercial, and industrial needs",
           ],
-           Image: ProductHero,
+           Image: ProductImage1,
         },
         {
           id: 2,
@@ -114,7 +114,7 @@ export const ProductsData = [
             "Shock and vibration resistant for tough terrains",
             "Engineered specifically for tractor power needs",
           ],
-           Image: ProductHero,
+           Image: ProductImage2,
         },
       ],
     },
@@ -130,8 +130,8 @@ export const ProductsData = [
         name: "E-Rickshaws",
         Heroimage: Icon1,
         desc: "Adwin provides specialized battery and charger solutions for E-Rickshaws, supporting the growing demand for green urban mobility. Our products deliver reliable, long-lasting power that keeps commercial vehicles on the road longer, with safety and efficiency built into every system.",
-        descImage: ProductHero,
-        featureImage: ProductHero,
+        descImage: DescImage,
+        featureImage: FeatureBgImage,
         features: [
           { image: RickIcon1, name: "Durable batteries for daily heavy use" },
           { image: RickIcon2, name: "Fast recharge and deep discharge tolerance" },
@@ -149,6 +149,7 @@ export const ProductsData = [
               "High charge/discharge efficiency",
               "Safe, stable lithium battery chemistry",
             ],
+            Image: ProductImage1,
           },
           {
             id: 2,
@@ -160,6 +161,7 @@ export const ProductsData = [
               "Proven reliability for commercial use",
               "Supported by extensive after-sales service",
             ],
+            Image: ProductImage2,
           },
           {
             id: 3,
@@ -171,7 +173,7 @@ export const ProductsData = [
               "Energy-efficient operation with low heat generation",
               "Durable construction for frequent commercial use",
             ],
-             Image: ProductHero,
+             Image: ProductImage3,
           },
         ],
       },
@@ -180,8 +182,8 @@ export const ProductsData = [
         name: "E-Bikes",
         Heroimage: Icon1,
         desc: "Adwin’s e-bike batteries are engineered to deliver lightweight, high-capacity power for longer rides and quicker charging. Designed with safety and durability in mind, these batteries provide reliable performance for daily commuting and recreational use.",
-        descImage: ProductHero,
-        featureImage: ProductHero,
+        descImage: DescImage,
+        featureImage: FeatureBgImage,
         features: [
           { image: BikeIcon1, name: "Cost-Effective Transport" },
           { image: BikeIcon2, name: "Zero Emissions" },
@@ -199,7 +201,7 @@ export const ProductsData = [
               "Fast recharge capabilities",
               "Safe and stable LiFePO4 chemistry",
             ],
-             Image: ProductHero,
+             Image: ProductImage1,
           },
           {
             id: 2,
@@ -211,7 +213,7 @@ export const ProductsData = [
               "Economical solution for daily use",
               "Durable and safe for urban environments",
             ],
-             Image: ProductHero,
+             Image: ProductImage2,
           },
           {
             id: 3,
@@ -223,7 +225,7 @@ export const ProductsData = [
               "Compact, portable design",
               "Energy-efficient charging cycles",
             ],
-             Image: ProductHero,
+             Image: ProductImage3,
           },
         ],
       },
@@ -239,8 +241,8 @@ export const ProductsData = [
         name: "Lithium Inverters and Batteries",
         Heroimage: Icon1,
         desc: "Adwin’s lithium energy storage combines advanced battery chemistry with smart inverters, offering scalable, efficient backup power solutions for homes and businesses. These systems support modular expansion and provide reliable, clean energy.",
-        descImage: ProductHero,
-        featureImage: ProductHero,
+        descImage: DescImage,
+        featureImage: FeatureBgImage,
         features: [
           { image: LithiumIcon1, name: "Up to 10,000+ charge cycles" },
           { image: LithiumIcon2, name: "90%+ depth of discharge for maximum use" },
@@ -258,7 +260,7 @@ export const ProductsData = [
               "Wide temperature tolerance for varied environments",
               "Safe and non-toxic chemistry",
             ],
-             Image: ProductHero,
+             Image: ProductImage1,
           },
           {
             id: 2,
@@ -270,7 +272,7 @@ export const ProductsData = [
               "Compact, quiet, and easy to install",
               "Compatible with multiple battery voltages",
             ],
-             Image: ProductHero,
+             Image: ProductImage2,
           },
           {
             id: 3,
@@ -282,7 +284,7 @@ export const ProductsData = [
               "Integrated safety and monitoring features",
               "Suitable for residential and commercial use",
             ],
-             Image: ProductHero,
+             Image: ProductImage3,
           },
         ],
       },
@@ -291,8 +293,8 @@ export const ProductsData = [
         name: "E-Solar PCU, Inverter and Charger",
         Heroimage: Icon1,
         desc: "Adwin’s Solar PCUs, inverters, and chargers use advanced MPPT technology to optimize solar energy harvest and battery charging. Manufactured under strict ISO standards, they ensure safe, reliable, and efficient power management. These units protect batteries and electrical systems with smart safety features.",
-        descImage: ProductHero,
-        featureImage: ProductHero,
+        descImage: DescImage,
+        featureImage: FeatureBgImage,
         features: [
           { image: PCUIcon1, name: "High conversion efficiency up to 98%" },
           { image: PCUIcon2, name: "MPPT technology for optimized solar harvesting" },
@@ -310,7 +312,7 @@ export const ProductsData = [
               "Durable for all weather conditions",
               "Integrated safety features",
             ],
-             Image: ProductHero,
+             Image: ProductImage1,
           },
           {
             id: 2,
@@ -322,7 +324,7 @@ export const ProductsData = [
               "Low maintenance and eco-friendly design",
               "Reliable under varied climate conditions",
             ],
-             Image: ProductHero,
+             Image: ProductImage2,
           },
           {
             id: 3,
@@ -334,7 +336,7 @@ export const ProductsData = [
               "Fast charging and discharging",
               "Intelligent energy management",
             ],
-             Image: ProductHero,
+             Image: ProductImage3,
           },
         ],
       },
@@ -343,8 +345,8 @@ export const ProductsData = [
         name: "Lead Acid Inverters and Batteries ",
         Heroimage: Icon1,
         desc: "Adwin’s Lead Acid inverters and batteries deliver reliable, cost-effective power backup for homes, industries, and agricultural use. Designed with advanced tubular plate technology, these solutions ensure longer life, faster recharge, and robust performance even under challenging conditions.",
-        descImage: ProductHero,
-        featureImage: ProductHero,
+        descImage: DescImage,
+        featureImage: FeatureBgImage,
         features: [
           { image: LeadIcon1, name: "48-60 months warranty on select models" },
           { image: LeadIcon2, name: "Low self-discharge rate for extended standby" },
@@ -362,7 +364,7 @@ export const ProductsData = [
               "User-friendly with built-in safety",
               "Suitable for home and small business",
             ],
-             Image: ProductHero,
+             Image: ProductImage1,
           },
           {
             id: 2,
@@ -374,7 +376,7 @@ export const ProductsData = [
               "Low maintenance and eco-safe",
               "Excellent charge acceptance",
             ],
-             Image: ProductHero,
+             Image: ProductImage2,
           },
         ],
       },
@@ -389,8 +391,8 @@ export const ProductsData = [
       name: "",
       Heroimage: Icon1,
       desc: "Adwin offers essential agricultural tools designed to boost farm productivity and protect crops. The spray pump is a lightweight, backpack-style sprayer used by farmers for pesticides and nutrients. Our fencing solutions use electric current powered by durable batteries to keep pests and rodents away effectively.",
-      descImage: ProductHero,
-      featureImage: ProductHero,
+      descImage: DescImage,
+      featureImage: FeatureBgImage,
       features: [
         { image: AgriIcon1, name: "Lightweight, efficient spray pumps" },
         { image: AgriIcon2, name: "Electric fencing with durable batteries" },
@@ -408,7 +410,7 @@ export const ProductsData = [
             "More sprays per charge",
             "Long-lasting with zero maintenance",
           ],
-           Image: ProductHero,
+           Image: ProductImage1,
         },
         {
           id: 2,
@@ -420,7 +422,7 @@ export const ProductsData = [
             "Zero maintenance required",
             "Effective pest and rodent control",
           ],
-           Image: ProductHero,
+           Image: ProductImage2,
         },
         
       
@@ -436,8 +438,8 @@ export const ProductsData = [
       name: "Ozoro LED Lighting",
       Heroimage: Icon1,
       desc: "High-efficiency industrial and residential lighting that saves energy and lasts longer. Smart designs for warehouses, homes, offices, and urban spaces with solar-ready options.",
-      descImage: ProductHero,
-      featureImage: ProductHero,
+      descImage: DescImage,
+      featureImage: FeatureBgImage,
       features: [
         { image: OzIcon1, name: "Saves up to 80% energy" },
         { image: OzIcon2, name: "20,000+ hours of lifespan" },
@@ -455,7 +457,7 @@ export const ProductsData = [
             "More sprays per charge",
             "Long-lasting with zero maintenance",
           ],
-           Image: ProductHero,
+           Image: ProductImage1,
         },
         {
           id: 2,
@@ -467,7 +469,7 @@ export const ProductsData = [
             "Zero maintenance required",
             "Effective pest and rodent control",
           ],
-           Image: ProductHero,
+           Image: ProductImage2,
         },
         
       

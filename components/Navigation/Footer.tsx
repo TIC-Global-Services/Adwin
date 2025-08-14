@@ -5,7 +5,7 @@ import Image from 'next/image'
 const Footer = () => {
   const navigationLinks = [
     { name: 'Home', href: '/' },
-    { name: 'About us', href: '/about' },
+    { name: 'About us', href: '/about/overview' },
     { name: 'Products', href: '/products' },
     { name: 'Tools', href: '/tools' },
     { name: 'Services', href: '/services' },

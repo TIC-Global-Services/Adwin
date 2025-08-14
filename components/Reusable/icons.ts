@@ -147,6 +147,18 @@ export {default as HeroServicePage} from '@/assets/Service/Hero.png';
 
 // PRoducts Detials ICons
 
+//Feature 
+export {default as FeatureBgImage} from "@/assets/ProductDetails/FeaturesBg.png"
+export {default as DescImage} from "@/assets/ProductDetails/DescImage.png"
+
+
+export {default as ProductImage1} from "@/assets/ProductDetails/1.png"
+export {default as ProductImage2} from "@/assets/ProductDetails/2.png"
+export {default as ProductImage3} from "@/assets/ProductDetails/3.png"
+export {default as ProductImage4} from "@/assets/ProductDetails/4.png"
+
+
+
 //Products - solar - 1
 export {default as SolarIcon1} from '@/assets/ProductDetails/Reneable/1.png';
 export {default as SolarIcon2} from '@/assets/ProductDetails/Reneable/2.png';

@@ -81,7 +81,7 @@ const CircleElement: React.FC<CircleElementProps> = ({
   }, []);
 
   return (
-    
+
     <div
       ref={containerRef}
       className="flex items-center justify-center h-18 relative"
@@ -222,11 +222,11 @@ const page: React.FC = () => {
         subtitle="Journey"
       />
 
-      <div className="flex lg:flex-row flex-col justify-center w-full">
+      <div className="flex lg:flex-row flex-col justify-center max-w-8xl mx-auto md:pr-12">
         <div className="flex-1">
-          <div className="sticky top-5 flex justify-center items-start">
-            <h1 className="lg:text-[28px] text-[15px] font-semibold md:text-start text-center md:px-0 px-5 lg:pl-10 mt-30  text-black max-w-xl">
-              From humble beginnings to milestones, our journey is driven by passion and purpose
+          <div className="sticky top-5 flex justify-between items-start md:px-20">
+            <h1 className="lg:text-[25px] text-[15px] font-semibold md:text-start text-center   mt-30  text-black">
+              From humble beginnings to milestones, <br /> our journey is driven by passion and purpose
             </h1>
           </div>
         </div>

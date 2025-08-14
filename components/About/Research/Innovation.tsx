@@ -37,7 +37,7 @@ const Innovation = () => {
     
     return (
         <div className='mb-40'>
-            <div className="max-w-[1350px] mx-auto px-4 py-8">
+            <div className="max-w-8xl mx-auto px-15 py-8">
                 <div className="flex flex-col md:flex-row items-center justify-between h-auto md:h-[342px] gap-6">
 
                     {/* Text Section */}
@@ -95,7 +95,7 @@ const Innovation = () => {
                 initial={{ opacity: 0 }}
                 animate={isContainerInView ? { opacity: 1 } : {}}
                 transition={{ duration: 0.5 }}
-                className='flex flex-col lg:flex-row items-center lg:items-start h-auto lg:h-[691px] w-full max-w-7xl mx-auto mt-30 gap-x-10 gap-y-8 px-4'
+                className='flex flex-col lg:flex-row items-center lg:items-start h-auto lg:h-[691px] w-full max-w-8xl px-15 mx-auto mt-30 gap-x-10 gap-y-8'
             >
                 {/* Left Image Section */}
                 <motion.div 

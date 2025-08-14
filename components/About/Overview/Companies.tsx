@@ -114,7 +114,7 @@ const Companies = () => {
             </div>
             
             {/* Desktop: Horizontal company logos */}
-            <div className='hidden md:flex flex-row justify-between w-full max-w-5xl'>
+            <div className='hidden md:flex flex-row justify-between w-full max-w-7xl'>
               {CompanyLogos.map((item, index) => (
                 <div key={index} className='flex flex-row items-center'>
                   <Image

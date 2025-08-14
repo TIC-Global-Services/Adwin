@@ -27,13 +27,13 @@ const Directors = () => {
                     Our leadership combines decades of industry experience with a shared vision to transform the way India and emerging markets access clean, reliable power.
                 </p>
             </motion.div>
-            <div className="overflow-x-auto scroll-snap-x scrollbar-hide group md:mt-25 mt-10">
+            <div className="overflow-x-auto scroll-snap-x scrollbar-hide group md:mt-25 mt-10 ">
                 <motion.div
                     ref={imageRef}
                     initial={{ opacity: 0, y: 30 }}
                     animate={isImageInView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
-                    className="flex space-x-5 max-w-7xl px-4"
+                    className="flex space-x-5 max-w-[1400px]"
                 >
                     {directors.map((item, index) => (
                         <div

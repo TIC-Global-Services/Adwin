@@ -148,12 +148,12 @@ const ANIMATIONS = {
 // Utility functions
 const getCardClasses = (index: number, totalItems: number): string => {
   const baseClasses =
-    "md:pl-8 md:py-8 pl-4 py-4 rounded-[20px] md:h-[352px] flex flex-col transition-colors duration-300 overflow-hidden";
+    "";
 
-  if (index === 0) return `${baseClasses} justify-start hidden md:flex`;
+  if (index === 0) return `${baseClasses} justify-start hidden md:flex md:pl-0 md:py-8 pl-4 py-4 rounded-[20px] md:h-[352px] flex flex-col transition-colors duration-300 overflow-hidden `;
   if (index === totalItems - 1)
-    return `${baseClasses} justify-between col-span-2 md:col-span-1  bg-[#F4F5F7]`;
-  return `${baseClasses} justify-between group bg-[#F4F5F7] `;
+    return `${baseClasses} justify-between col-span-2 md:col-span-1  bg-[#F4F5F7] md:pl-8 md:py-8 pl-4 py-4 rounded-[20px] md:h-[352px] flex flex-col transition-colors duration-300 overflow-hidden`;
+  return `${baseClasses} justify-between group bg-[#F4F5F7] md:pl-8 md:py-8 pl-4 py-4 rounded-[20px] md:h-[352px] flex flex-col transition-colors duration-300 overflow-hidden `;
 };
 
 // Card Component
@@ -283,7 +283,7 @@ const Expertise: React.FC = () => {
   const isHeaderInView = useInView(headerRef, { once: false, margin: "-50px" });
 
   return (
-    <div className="max-w-7xl mx-auto xl:px-0 px-[30px] md:-mt-0 -mt-50">
+    <div className="max-w-8xl mx-auto md:px-15 px-[30px] md:-mt-0 -mt-50 md:pb-20 pb-5">
       <div ref={headerRef}>
         <MobileHeader isHeaderInView={isHeaderInView} />
       </div>

@@ -274,29 +274,31 @@ const ProductPage = () => {
       )}
 
       {/* Product Header */}
-      <div className="p-4">
+      <div className="">
         {/* Hero Section */}
-        <div className="relative w-full h-[96dvh] mb-12 ">
-          {product.mainImage ? (
-            <Image
-              src={product.mainImage}
-              alt={product.name}
-              fill
-              className="object-cover rounded-xl "
-              priority
-            />
-          ) : (
-            <div className="w-full h-full bg-gray-200 rounded-lg flex items-center justify-center">
-              <span className="text-gray-500">No Image Available</span>
-            </div>
-          )}
-          <span className="absolute bottom-5 left-5  text-[68px] text-white  tracking-wide">
-            {category.title}
-          </span>
+        <div className="p-4">
+          <div className="relative w-full h-[96dvh] mb-12 ">
+            {product.mainImage ? (
+              <Image
+                src={product.mainImage}
+                alt={product.name}
+                fill
+                className="object-cover rounded-xl "
+                priority
+              />
+            ) : (
+              <div className="w-full h-full bg-gray-200 rounded-lg flex items-center justify-center">
+                <span className="text-gray-500">No Image Available</span>
+              </div>
+            )}
+            <span className="absolute bottom-10 left-12  text-[68px] text-white  tracking-wide">
+              {category.title}
+            </span>
+          </div>
         </div>
 
         {/* Content Section */}
-        <div className="grid md:grid-cols-2 gap-12 mb-16 justify-center items-center max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-12 mb-16 justify-center items-center max-w-8xl mx-auto md:px-15">
           <div className="space-y-6 ">
             <div>
               <div className="flex items-center  gap-2 mb-2">
@@ -358,7 +360,7 @@ const ProductPage = () => {
       </div>
 
       {/* Product Details */}
-      <div className="max-w-7xl mx-auto px-4 py-20">
+      <div className="max-w-8xl mx-auto  py-20">
         {product.details && product.details.length > 0 && (
           <div className="space-y-16">
             {/* Section Title */}
@@ -370,7 +372,7 @@ const ProductPage = () => {
               return (
                 <div
                   key={detail.id}
-                  className="grid lg:grid-cols-2 gap-12 items-stretch max-w-7xl mx-auto justify-center "
+                  className="grid lg:grid-cols-2 gap-12 items-stretch  px-15 mx-auto justify-center "
                 >
                   {/* Left Side - Text */}
                   <div
@@ -378,7 +380,7 @@ const ProductPage = () => {
                   >
                     {/* Top content */}
                     <div>
-                      <div className="flex flex-row justify-between gap-2">
+                      <div className="flex flex-row justify-between gap-5 mt-3">
                         <h3 className="text-2xl font-semibold text-gray-900">
                           {detail.name}
                         </h3>
@@ -459,7 +461,7 @@ const ProductPage = () => {
       <div className="text-center py-10 border-gray-200">
         <button
           onClick={() => router.push("/products")}
-          className="bg-[#005F20] text-white px-8 py-3 rounded-lg hover:bg-[#004A1A] transition-colors duration-200 font-medium"
+          className="bg-[#005F20] text-white px-8 py-3 rounded-lg hover:bg-[#004A1A] transition-colors duration-200 font-medium cursor-pointer"
         >
           ← Back to Products
         </button>

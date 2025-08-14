@@ -40,6 +40,9 @@ export const CompanyLogos = [
   {
     image: CompanyLogo1,
   },
+    {
+    image: CompanyLogo1,
+  },
 ];
 
 export const companiesContent = [

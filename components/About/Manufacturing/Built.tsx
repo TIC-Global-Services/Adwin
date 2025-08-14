@@ -18,7 +18,7 @@ const Built = () => {
   const displayedIndex = hoveredIndex !== null ? hoveredIndex : activeIndex;
 
   return (
-    <div className="flex flex-col items-center justify-between text-center max-w-7xl mx-auto md:py-20 py-10">
+    <div className="flex flex-col items-center justify-between text-center max-w-8xl md:px-15 mx-auto md:py-20 py-10">
       <motion.div
         ref={titleRef}
         initial={{ opacity: 0, y: 30 }}

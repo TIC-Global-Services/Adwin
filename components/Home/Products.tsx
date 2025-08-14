@@ -37,7 +37,7 @@ const Products: React.FC = () => {
     if (isImageOnly) {
       return (
         <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden group">
-          <div className="relative h-64 overflow-hidden h-[369px]">
+          <div className="relative  overflow-hidden h-[369px]">
             <Image
               src={product.image || "/file.svg"}
               alt="Product Image"
@@ -90,7 +90,7 @@ const Products: React.FC = () => {
     if (isImageOnly) {
       return (
         <div className="bg-white rounded-lg   transition-shadow duration-300 overflow-hidden group">
-          <div className="relative h-64 overflow-hidden md:h-[369px] h-[212px]">
+          <div className="relative  overflow-hidden md:h-[369px] h-[212px]">
             <Image
               src={product.image || "/file.svg"}
               alt="Product Image"
@@ -141,13 +141,13 @@ const Products: React.FC = () => {
   };
 
   return (
-    <div className=" md:py-20 py-10 px-10 bg-[#F6F6F6]">
+    <div className=" md:py-20 py-10 px-15 bg-[#F6F6F6]">
       <motion.div
         ref={titleRef}
         initial={{ opacity: 0, y: 50 }}
         animate={isTitleInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="flex md:flex-row flex-col w-full justify-between md:items-start items-center max-w-7xl mx-auto"
+        className="flex md:flex-row flex-col w-full justify-between md:items-start items-center max-w-8xl mx-auto"
       >
         <h1 className="font-archivo md:text-[28px] text-[18px] text-[#4A4A4A] font-regular">
           Our Products & Services
@@ -160,7 +160,7 @@ const Products: React.FC = () => {
 
       <motion.div>
         {/* Desktop Layout */}
-        <div className="hidden md:block container mx-auto px-24 md:mt-10 mt-0 py-8">
+        <div className="hidden md:block container mx-auto  md:mt-10 mt-0 py-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {productsContent.map((product: Product, index: number) => (
               <div key={index}>

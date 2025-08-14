@@ -23,7 +23,7 @@ const contents = [
 
 const Manufacture = () => {
   return (
-    <div className='flex flex-row justify-center items-center gap-12 p-6 max-w-7xl mx-auto py-20'>
+    <div className='flex flex-row justify-center items-center gap-12 p-6 max-w-8xl mx-auto py-20'>
       {/* Left side - GIF (40% width) */}
       <div className='w-2/5 flex justify-center items-center bg-[#F6FDF9] p-8 h-[548px] '>
         <Image 

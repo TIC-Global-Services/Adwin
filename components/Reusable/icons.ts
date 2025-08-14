@@ -156,9 +156,9 @@ export {default as SolarIcon4} from '@/assets/ProductDetails/Reneable/4.png';
 
 //Products - Auto - 1
 export {default as AutoIcon1} from '@/assets/ProductDetails/Auto/1.png';
-export {default as AutoIcon2} from '@/assets/ProductDetails/Auto/2.png';
-export {default as AutoIcon3} from '@/assets/ProductDetails/Auto/3.png';
-export {default as AutoIcon4} from '@/assets/ProductDetails/Auto/4.png';
+export {default as AutoIcon2} from '@/assets/ProductDetails/Auto/5.png';
+export {default as AutoIcon3} from '@/assets/ProductDetails/Auto/6.png';
+export {default as AutoIcon4} from '@/assets/ProductDetails/Auto/7.png';
 
 //Products - Bike - 1
 export {default as BikeIcon1} from '@/assets/ProductDetails/bike/5.png';

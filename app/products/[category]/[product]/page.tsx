@@ -381,9 +381,23 @@ const ProductPage = () => {
                     {/* Top content */}
                     <div>
                       <div className="flex flex-row justify-between gap-5 mt-3">
-                        <h3 className="text-2xl font-semibold text-gray-900">
-                          {detail.name}
-                        </h3>
+                      <h3 className="text-2xl font-semibold text-gray-900">
+  {(() => {
+    const words = detail.name.split(" ");
+    if (words.length === 1) {
+      // Only one word → keep normal color
+      return detail.name;
+    }
+    const lastWord = words.pop(); // remove last word
+    return (
+      <>
+        {words.join(" ")}{" "}
+        <span className="text-[#005F20]">{lastWord}</span>
+      </>
+    );
+  })()}
+</h3>
+
                         <p className="text-gray-600 leading-relaxed max-w-sm">
                           {detail.desc}
                         </p>

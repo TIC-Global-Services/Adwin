@@ -95,10 +95,10 @@ export {default as MapBg} from '@/assets/About/manufacturing/BGMap.png';
 
 // About - manufacture
 
-export {default as Logo2} from "@/assets/About/Manufacturing/Manufacture/bat.svg";
-export {default as Logo1} from "@/assets/About/Manufacturing/Manufacture/Icon.svg";
-export {default as Logo3} from "@/assets/About/Manufacturing/Manufacture/solar.svg";
-export {default as Logo4} from "@/assets/About/Manufacturing/Manufacture/solars.svg";
+export {default as Logo2} from "@/assets/About/Manufacturing/Manufacture/1.svg";
+export {default as Logo1} from "@/assets/About/Manufacturing/Manufacture/2.svg";
+export {default as Logo3} from "@/assets/About/Manufacturing/Manufacture/3.svg";
+export {default as Logo4} from "@/assets/About/Manufacturing/Manufacture/4.svg";
 
 //About - Research
 

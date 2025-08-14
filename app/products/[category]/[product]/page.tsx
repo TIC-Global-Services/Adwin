@@ -340,8 +340,8 @@ const ProductPage = () => {
                         <Image
                           src={feature.image}
                           alt={feature.name}
-                          width={24}
-                          height={24}
+                          width={55}
+                          height={55}
                           className="mb-2"
                         />
                       )}
@@ -373,63 +373,62 @@ const ProductPage = () => {
                   className="grid lg:grid-cols-2 gap-12 items-stretch max-w-7xl mx-auto justify-center "
                 >
                   {/* Left Side - Text */}
-                 <div
-  className={`space-y-6 bg-[#F8F9F9] px-4 py-5 flex flex-col relative ${containerHeight}`}
->
-  {/* Top content */}
-  <div>
-    <div className="flex flex-row justify-between gap-2">
-      <h3 className="text-2xl font-semibold text-gray-900">
-        {detail.name}
-      </h3>
-      <p className="text-gray-600 leading-relaxed max-w-sm">
-        {detail.desc}
-      </p>
-    </div>
+                  <div
+                    className={`space-y-6 bg-[#F8F9F9] px-4 py-5 flex flex-col relative ${containerHeight}`}
+                  >
+                    {/* Top content */}
+                    <div>
+                      <div className="flex flex-row justify-between gap-2">
+                        <h3 className="text-2xl font-semibold text-gray-900">
+                          {detail.name}
+                        </h3>
+                        <p className="text-gray-600 leading-relaxed max-w-sm">
+                          {detail.desc}
+                        </p>
+                      </div>
 
-    {detail.benefits?.length > 0 && (
-      <>
-        {!isExpanded && (
-          <div className="absolute bottom-10 left-5">
-            <button
-              onClick={() => toggleBenefits(detail.id)}
-              className="flex items-center gap-1 text-[#151414] text-[14px] font-medium hover:underline cursor-pointer"
-            >
-              Know More
-              <IoArrowDown size={14} />
-            </button>
-          </div>
-        )}
-        {isExpanded && (
-          <div className="py-4 mt-3">
-            <ul className="space-y-2 w-[380px] ml-auto">
-              <h4 className="text-lg font-medium mb-3 text-gray-900">
-                Benefits
-              </h4>
-              {detail.benefits.map((benefit, index) => (
-                <li key={index} className="flex items-start">
-                  <span className="text-gray-700 text-[13px] leading-relaxed">
-                    • {benefit}
-                  </span>
-                </li>
-              ))}
-            </ul>
-            <div className="absolute bottom-5 left-3">
-              <button
-                onClick={() => toggleBenefits(detail.id)}
-                className="flex items-center gap-1 text-[#151414] font-medium hover:underline transition-colors cursor-pointer"
-              >
-                Show Less
-                <IoArrowUp size={14} />
-              </button>
-            </div>
-          </div>
-        )}
-      </>
-    )}
-  </div>
-</div>
-
+                      {detail.benefits?.length > 0 && (
+                        <>
+                          {!isExpanded && (
+                            <div className="absolute bottom-10 left-5">
+                              <button
+                                onClick={() => toggleBenefits(detail.id)}
+                                className="flex items-center gap-1 text-[#151414] text-[14px] font-medium hover:underline cursor-pointer"
+                              >
+                                Know More
+                                <IoArrowDown size={14} />
+                              </button>
+                            </div>
+                          )}
+                          {isExpanded && (
+                            <div className="py-4 mt-3">
+                              <ul className="space-y-2 w-[380px] ml-auto">
+                                <h4 className="text-lg font-medium mb-3 text-gray-900">
+                                  Benefits
+                                </h4>
+                                {detail.benefits.map((benefit, index) => (
+                                  <li key={index} className="flex items-start">
+                                    <span className="text-gray-700 text-[13px] leading-relaxed">
+                                      • {benefit}
+                                    </span>
+                                  </li>
+                                ))}
+                              </ul>
+                              <div className="absolute bottom-5 left-3">
+                                <button
+                                  onClick={() => toggleBenefits(detail.id)}
+                                  className="flex items-center gap-1 text-[#151414] font-medium hover:underline transition-colors cursor-pointer"
+                                >
+                                  Show Less
+                                  <IoArrowUp size={14} />
+                                </button>
+                              </div>
+                            </div>
+                          )}
+                        </>
+                      )}
+                    </div>
+                  </div>
 
                   {/* Right Side - Image */}
                   <div className={`flex ${containerHeight}`}>

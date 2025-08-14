@@ -95,10 +95,10 @@ export {default as MapBg} from '@/assets/About/manufacturing/BGMap.png';
 
 // About - manufacture
 
-export {default as Logo2} from "@/assets/About/Manufacturing/Manufacture/Battery-Indicator--Streamline-Iconoir.svg";
+export {default as Logo2} from "@/assets/About/Manufacturing/Manufacture/bat1.svg";
 export {default as Logo1} from "@/assets/About/Manufacturing/Manufacture/Icon 11.svg";
-export {default as Logo3} from "@/assets/About/Manufacturing/Manufacture/Solar-Panel--Streamline-Font-Awesome.svg";
-export {default as Logo4} from "@/assets/About/Manufacturing/Manufacture/Solar-Panel-Bold--Streamline-Phosphor.svg";
+export {default as Logo3} from "@/assets/About/Manufacturing/Manufacture/solar1.svg";
+export {default as Logo4} from "@/assets/About/Manufacturing/Manufacture/solar2.svg";
 
 //About - Research
 

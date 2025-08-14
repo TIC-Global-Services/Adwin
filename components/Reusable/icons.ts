@@ -83,6 +83,8 @@ export {default as Sustainability1} from '@/assets/About/sustainabilty/certifica
 // About - Manufacturing
 export {default as ManufacturingHero} from '@/assets/About/manufacturing/Frame 1171274965 (2) (1).png';
 
+
+
 // About - manufacturing built
 export {default as BuiltImage} from '@/assets/About/manufacturing/built.png';
 export {default as BuiltImage2} from '@/assets/About/manufacturing/built2.png';
@@ -91,6 +93,12 @@ export {default as BuiltImage3} from '@/assets/About/manufacturing/built3.png';
 //ABout - manufacturing - Scrolling 
 export {default as MapBg} from '@/assets/About/manufacturing/BGMap.png';
 
+// About - manufacture
+
+export {default as Logo2} from "@/assets/About/Manufacturing/Manufacture/Battery-Indicator--Streamline-Iconoir.svg";
+export {default as Logo1} from "@/assets/About/Manufacturing/Manufacture/Icon 11.svg";
+export {default as Logo3} from "@/assets/About/Manufacturing/Manufacture/Solar-Panel--Streamline-Font-Awesome.svg";
+export {default as Logo4} from "@/assets/About/Manufacturing/Manufacture/Solar-Panel-Bold--Streamline-Phosphor.svg";
 
 //About - Research
 

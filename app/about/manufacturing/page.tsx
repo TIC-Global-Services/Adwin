@@ -1,5 +1,6 @@
 
 import Built from '@/components/About/Manufacturing/Built'
+import Manufacture from '@/components/About/Manufacturing/Manufacture'
 import ScrollingText from '@/components/About/Manufacturing/ScrollingText'
 import DynamicHero from '@/components/Reusable/DynamicHero'
 import { ManufacturingHero } from '@/components/Reusable/icons'
@@ -17,6 +18,7 @@ const page = () => {
             />
             <Built />
             <ScrollingText />
+            <Manufacture />
  </div>
  
   )

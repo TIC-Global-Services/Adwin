@@ -81,11 +81,13 @@ const CircleElement: React.FC<CircleElementProps> = ({
   }, []);
 
   return (
+    
     <div
       ref={containerRef}
       className="flex items-center justify-center h-18 relative"
     >
       {/* Content positioned based on alignment */}
+    
       {isLeftAlign ? (
         <>
           {/* Image on left side of circle */}
@@ -134,7 +136,7 @@ const CircleElement: React.FC<CircleElementProps> = ({
             ref={imageRef}
             className="absolute left-full flex items-center md:ml-4 ml-1"
           >
-            <div className="md:w-[300px] md:h-[100px] w-35 h-[11  0px] relative overflow-hidden rounded-lg shadow-md">
+            <div className="md:w-[300px] md:h-[100px] w-35 h-[110px] relative overflow-hidden rounded-lg shadow-md">
               <Image
                 src={imageUrl}
                 alt={`Journey milestone for ${year}`}
@@ -221,15 +223,15 @@ const page: React.FC = () => {
       />
 
       <div className="flex lg:flex-row flex-col justify-center w-full">
-        {/* <div className="flex-1">
-          <div className="sticky top-10 flex justify-center items-start">
-            <h1 className="text-[68px] font-bold text-center text-black">
-              Our Journey
+        <div className="flex-1">
+          <div className="sticky top-5 flex justify-center items-start">
+            <h1 className="lg:text-[28px] text-[15px] font-semibold md:text-start text-center md:px-0 px-5 lg:pl-10 mt-30  text-black max-w-xl">
+              From humble beginnings to milestones, our journey is driven by passion and purpose
             </h1>
           </div>
-        </div> */}
+        </div>
         <div className="flex-1">
-          <div className="min-h-screen w-full max-w-full  py-30 mt-10">
+          <div className="min-h-screen w-full max-w-full  md:py-30 py-20 md:mt-10">
             {/* Alternating pattern container */}
             <div className="w-full max-w-[150px] mx-auto md:px-8 px-10">
               {elements.map((element, index) => (

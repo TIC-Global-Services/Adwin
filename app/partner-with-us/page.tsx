@@ -15,8 +15,9 @@ const page = () => {
                 mediaSrc={PartnerHeroImg}
                 title="Partner with us"
             />
-            <WhyPartnerUs />
             <BuildForScale />
+            <WhyPartnerUs />
+
             <AdwinAdvantage />
             <Benefits />
             <PartnerApply />

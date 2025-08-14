@@ -38,6 +38,7 @@ export {default as GBHeroImg } from '@/assets/GlobalBusiness/GBHeroImg.jpg';
 
 // Partner with us
 export {default as PartnerHeroImg } from '@/assets/Partner/PartnerHeroImg.jpg';
+export {default as BGMap} from '@/assets/Partner/WhyPartner/Frame 1171275630 (1).png';
 
 //icons
 export {default as CertifiedIcon } from '@/assets/Partner/Advantage/certifiedicon.svg';

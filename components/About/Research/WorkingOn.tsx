@@ -141,7 +141,7 @@ const WorkingOn = () => {
                   alt="Build Image"
                   width={500}
                   height={250}
-                  className="object-cover h-[250px] w-full transition-transform duration-500 ease-out hover:scale-105"
+                  className="object-cover h-[250px] w-full transition-transform duration-500 ease-out "
                 />
                 <motion.div
                   className="absolute inset-0 bg-[#005F20] opacity-0 transition-opacity duration-400 ease-out"

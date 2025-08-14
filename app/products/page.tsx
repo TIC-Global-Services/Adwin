@@ -1,3 +1,4 @@
+import Products from '@/components/Products/Products'
 import DynamicHero from '@/components/Reusable/DynamicHero'
 import { ProductHero } from '@/components/Reusable/icons'
 import React from 'react'
@@ -12,6 +13,7 @@ const page = () => {
                 subtitle='Solutions'
                 addLineBreak={false}
             />
+            <Products />
 </div>
   )
 }

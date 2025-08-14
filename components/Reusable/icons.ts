@@ -145,9 +145,66 @@ export {default as HeroServicePage} from '@/assets/Service/Hero.png';
 
 
 
+// PRoducts Detials ICons
+
+//Products - solar - 1
+export {default as SolarIcon1} from '@/assets/ProductDetails/Reneable/1.png';
+export {default as SolarIcon2} from '@/assets/ProductDetails/Reneable/2.png';
+export {default as SolarIcon3} from '@/assets/ProductDetails/Reneable/3.png';
+export {default as SolarIcon4} from '@/assets/ProductDetails/Reneable/4.png';
 
 
+//Products - Auto - 1
+export {default as AutoIcon1} from '@/assets/ProductDetails/Auto/1.png';
+export {default as AutoIcon2} from '@/assets/ProductDetails/Auto/2.png';
+export {default as AutoIcon3} from '@/assets/ProductDetails/Auto/3.png';
+export {default as AutoIcon4} from '@/assets/ProductDetails/Auto/4.png';
 
+//Products - Bike - 1
+export {default as BikeIcon1} from '@/assets/ProductDetails/bike/5.png';
+export {default as BikeIcon2} from '@/assets/ProductDetails/bike/6.png';
+export {default as BikeIcon3} from '@/assets/ProductDetails/bike/7.png';
+export {default as BikeIcon4} from '@/assets/ProductDetails/bike/8.png';
+
+
+//Products - Rick - 1
+export {default as RickIcon1} from '@/assets/ProductDetails/Rick/1.png';
+export {default as RickIcon2} from '@/assets/ProductDetails/Rick/2.png';
+export {default as RickIcon3} from '@/assets/ProductDetails/Rick/3.png';
+export {default as RickIcon4} from '@/assets/ProductDetails/Rick/4.png';
+
+
+//Products - Lead - 1
+export {default as LeadIcon1} from '@/assets/ProductDetails/LEad/31.png';
+export {default as LeadIcon2} from '@/assets/ProductDetails/LEad/32.png';
+export {default as LeadIcon3} from '@/assets/ProductDetails/LEad/33.png';
+export {default as LeadIcon4} from '@/assets/ProductDetails/LEad/34.png';
+
+//Products - Lithium - 2
+export {default as LithiumIcon1} from '@/assets/ProductDetails/lithium/10.png';
+export {default as LithiumIcon2} from '@/assets/ProductDetails/lithium/11.png';
+export {default as LithiumIcon3} from '@/assets/ProductDetails/lithium/12.png';
+export {default as LithiumIcon4} from '@/assets/ProductDetails/lithium/13.png';
+
+//Products - pcu - 2
+export {default as PCUIcon1} from '@/assets/ProductDetails/pcu/21.png';
+export {default as PCUIcon2} from '@/assets/ProductDetails/pcu/22.png';
+export {default as PCUIcon3} from '@/assets/ProductDetails/pcu/23.png';
+export {default as PCUIcon4} from '@/assets/ProductDetails/pcu/24.png';
+
+
+//Products - Agri - 1
+export {default as AgriIcon1} from '@/assets/ProductDetails/Agri/A1.png';
+export {default as AgriIcon2} from '@/assets/ProductDetails/Agri/A2.png';
+export {default as AgriIcon3} from '@/assets/ProductDetails/Agri/A3.png';
+export {default as AgriIcon4} from '@/assets/ProductDetails/Agri/A4.png';
+
+
+//Products - Oz - 1
+export {default as OzIcon1} from '@/assets/ProductDetails/Oz/O1.png';
+export {default as OzIcon2} from '@/assets/ProductDetails/Oz/o2.png';
+export {default as OzIcon3} from '@/assets/ProductDetails/Oz/O3.png';
+export {default as OzIcon4} from '@/assets/ProductDetails/Oz/O4.png';
 
 
 

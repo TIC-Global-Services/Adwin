@@ -1,6 +1,6 @@
 
 // data/Products.ts
-import { Icon1, ProductHero } from "@/components/Reusable/icons";
+import { AgriIcon1, AgriIcon2, AgriIcon3, AgriIcon4, AutoIcon1, AutoIcon2, AutoIcon3, AutoIcon4, BikeIcon1, BikeIcon2, BikeIcon3, BikeIcon4, Icon1, LeadIcon1, LeadIcon2, LeadIcon3, LeadIcon4, LithiumIcon1, LithiumIcon2, LithiumIcon3, LithiumIcon4, OzIcon1, OzIcon2, OzIcon3, OzIcon4, PCUIcon1, PCUIcon2, PCUIcon3, PCUIcon4, ProductHero, RickIcon1, RickIcon2, RickIcon3, RickIcon4, SolarIcon1, SolarIcon2, SolarIcon3, SolarIcon4 } from "@/components/Reusable/icons";
 
 
 export const ProductsData = [
@@ -17,10 +17,10 @@ export const ProductsData = [
       descImage: ProductHero,
       featureImage: ProductHero,
       features: [
-        { image: Icon1, name: "Optimized for Indian Solar" },
-        { image: Icon1, name: "Seamless Inverter Compatibility" },
-        { image: Icon1, name: "Ideal for Remote Areas" },
-        { image: Icon1, name: "Reduces Carbon Footprint" },
+        { image: SolarIcon1, name: "Optimized for Indian Solar" },
+        { image: SolarIcon2, name: "Seamless Inverter Compatibility" },
+        { image: SolarIcon3, name: "Ideal for Remote Areas" },
+        { image: SolarIcon4, name: "Reduces Carbon Footprint" },
       ],
       details: [
         {
@@ -86,10 +86,10 @@ export const ProductsData = [
       descImage: ProductHero,
       featureImage: ProductHero,
       features: [
-        { image: Icon1, name: "High cranking power for extreme climates" },
-        { image: Icon1, name: "Advanced graphene and calcium alloy tech" },
-        { image: Icon1, name: "Certified quality with long life cycles" },
-        { image: Icon1, name: "Trusted by major OEMs across India" },
+        { image: AutoIcon1, name: "High cranking power for extreme climates" },
+        { image: AutoIcon2, name: "Advanced graphene and calcium alloy tech" },
+        { image: AutoIcon3, name: "Certified quality with long life cycles" },
+        { image: AutoIcon4, name: "Trusted by major OEMs across India" },
       ],
       details: [
         {
@@ -133,10 +133,10 @@ export const ProductsData = [
         descImage: ProductHero,
         featureImage: ProductHero,
         features: [
-          { image: Icon1, name: "Durable batteries for daily heavy use" },
-          { image: Icon1, name: "Fast recharge and deep discharge tolerance" },
-          { image: Icon1, name: "Low maintenance, high reliability" },
-          { image: Icon1, name: "Supports eco-friendly urban transport" },
+          { image: RickIcon1, name: "Durable batteries for daily heavy use" },
+          { image: RickIcon2, name: "Fast recharge and deep discharge tolerance" },
+          { image: RickIcon3, name: "Low maintenance, high reliability" },
+          { image: RickIcon4, name: "Supports eco-friendly urban transport" },
         ],
         details: [
           {
@@ -183,10 +183,10 @@ export const ProductsData = [
         descImage: ProductHero,
         featureImage: ProductHero,
         features: [
-          { image: Icon1, name: "Cost-Effective Transport" },
-          { image: Icon1, name: "Zero Emissions" },
-          { image: Icon1, name: "Extended Battery Range" },
-          { image: Icon1, name: "Ideal for Urban & Rural Roads" },
+          { image: BikeIcon1, name: "Cost-Effective Transport" },
+          { image: BikeIcon2, name: "Zero Emissions" },
+          { image: BikeIcon3, name: "Extended Battery Range" },
+          { image: BikeIcon4, name: "Ideal for Urban & Rural Roads" },
         ],
         details: [
           {
@@ -242,10 +242,10 @@ export const ProductsData = [
         descImage: ProductHero,
         featureImage: ProductHero,
         features: [
-          { image: Icon1, name: "Up to 10,000+ charge cycles" },
-          { image: Icon1, name: "90%+ depth of discharge for maximum use" },
-          { image: Icon1, name: "Lightweight & compact design" },
-          { image: Icon1, name: "Fast charge & discharge capabilities" },
+          { image: LithiumIcon1, name: "Up to 10,000+ charge cycles" },
+          { image: LithiumIcon2, name: "90%+ depth of discharge for maximum use" },
+          { image: LithiumIcon3, name: "Lightweight & compact design" },
+          { image: LithiumIcon4, name: "Fast charge & discharge capabilities" },
         ],
         details: [
           {
@@ -294,10 +294,10 @@ export const ProductsData = [
         descImage: ProductHero,
         featureImage: ProductHero,
         features: [
-          { image: Icon1, name: "High conversion efficiency up to 98%" },
-          { image: Icon1, name: "MPPT technology for optimized solar harvesting" },
-          { image: Icon1, name: "Wide voltage input range for flexibility" },
-          { image: Icon1, name: "Integrated inverter and charger in one unit" },
+          { image: PCUIcon1, name: "High conversion efficiency up to 98%" },
+          { image: PCUIcon2, name: "MPPT technology for optimized solar harvesting" },
+          { image: PCUIcon3, name: "Wide voltage input range for flexibility" },
+          { image: PCUIcon4, name: "Integrated inverter and charger in one unit" },
         ],
         details: [
           {
@@ -346,10 +346,10 @@ export const ProductsData = [
         descImage: ProductHero,
         featureImage: ProductHero,
         features: [
-          { image: Icon1, name: "48-60 months warranty on select models" },
-          { image: Icon1, name: "Low self-discharge rate for extended standby" },
-          { image: Icon1, name: "Robust performance in high temperature environments" },
-          { image: Icon1, name: "Eco-friendly with recyclable components" },
+          { image: LeadIcon1, name: "48-60 months warranty on select models" },
+          { image: LeadIcon2, name: "Low self-discharge rate for extended standby" },
+          { image: LeadIcon3, name: "Robust performance in high temperature environments" },
+          { image: LeadIcon4, name: "Eco-friendly with recyclable components" },
         ],
         details: [
           {
@@ -392,10 +392,10 @@ export const ProductsData = [
       descImage: ProductHero,
       featureImage: ProductHero,
       features: [
-        { image: Icon1, name: "Lightweight, efficient spray pumps" },
-        { image: Icon1, name: "Electric fencing with durable batteries" },
-        { image: Icon1, name: "Long battery life" },
-        { image: Icon1, name: "Zero maintenance for hassle-free use" },
+        { image: AgriIcon1, name: "Lightweight, efficient spray pumps" },
+        { image: AgriIcon2, name: "Electric fencing with durable batteries" },
+        { image: AgriIcon3, name: "Long battery life" },
+        { image: AgriIcon4, name: "Zero maintenance for hassle-free use" },
       ],
       details: [
         {
@@ -439,10 +439,10 @@ export const ProductsData = [
       descImage: ProductHero,
       featureImage: ProductHero,
       features: [
-        { image: Icon1, name: "Saves up to 80% energy" },
-        { image: Icon1, name: "20,000+ hours of lifespan" },
-        { image: Icon1, name: "Flicker-free and glare-free" },
-        { image: Icon1, name: "Solar-compatible and eco-conscious design" },
+        { image: OzIcon1, name: "Saves up to 80% energy" },
+        { image: OzIcon2, name: "20,000+ hours of lifespan" },
+        { image: OzIcon3, name: "Flicker-free and glare-free" },
+        { image: OzIcon4, name: "Solar-compatible and eco-conscious design" },
       ],
       details: [
         {

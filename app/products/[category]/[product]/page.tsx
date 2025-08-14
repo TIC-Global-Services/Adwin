@@ -238,40 +238,7 @@ const ProductPage = () => {
       </nav> */}
 
       {/* Product Selector for Multiple Products */}
-      {category.products && category.products.length > 1 && (
-        <div className="mb-12">
-          <div className="text-center mb-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-2">
-              {category.title}
-            </h2>
-            <p className="text-gray-600">Select a product to view details</p>
-          </div>
-
-          <div className="flex flex-wrap justify-center gap-4 mb-8">
-            {category.products.map((categoryProduct, index) => (
-              <button
-                key={index}
-                onClick={() => {
-                  const newSlug = createSlug(categoryProduct.name);
-                  router.push(
-                    `/products/${createSlug(category.title)}/${newSlug}`
-                  );
-                }}
-                className={`px-6 py-3 rounded-lg font-medium transition-all duration-200 ${
-                  categoryProduct.name === product.name
-                    ? "bg-[#005F20] text-white shadow-lg transform scale-105"
-                    : "bg-white text-[#005F20] border-2 border-[#005F20] hover:bg-[#005F20] hover:text-white"
-                }`}
-              >
-                {categoryProduct.name}
-              </button>
-            ))}
-          </div>
-
-          {/* Divider */}
-          <div className="w-full h-px bg-gray-200 mb-12"></div>
-        </div>
-      )}
+     
 
       {/* Product Header */}
       <div className="">
@@ -296,12 +263,44 @@ const ProductPage = () => {
             </span>
           </div>
         </div>
+        {category.products && category.products.length > 1 && (
+        <div className="mb-15">
+          <div className="text-center">
+            {/* <h2 className="text-2xl font-bold text-gray-900 mb-2">
+              {category.title}
+            </h2> 
+            <p className="text-gray-600">Select a product to view details</p>*/}
+          </div>
+
+          <div className="flex flex-wrap justify-center gap-4 mb-8">
+            {category.products.map((categoryProduct, index) => (
+              <button
+                key={index}
+                onClick={() => {
+                  const newSlug = createSlug(categoryProduct.name);
+                  router.push(
+                    `/products/${createSlug(category.title)}/${newSlug}`
+                  );
+                }}
+                className={`px-6 py-3 rounded-lg font-medium transition-all duration-200 ${
+                  categoryProduct.name === product.name
+                    ? "bg-[#ECFCE8] text-[#005F20] cursor-pointer transform hover:scale-105"
+                    : "bg-[#F8F8F8] text-[#4A4A4A]  cursor-pointer hover:scale-105"
+                }`}
+              >
+                {categoryProduct.name}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+
 
         {/* Content Section */}
         <div className="grid md:grid-cols-2 gap-12 mb-16 justify-center items-center max-w-8xl mx-auto md:px-15">
           <div className="space-y-6 ">
             <div>
-              <div className="flex items-center  gap-2 mb-2">
+              {/* <div className="flex items-center  gap-2 mb-2">
                 {category.products && category.products.length > 1 && (
                   <span className="bg-[#005F20] text-white text-xs px-2 py-1 rounded-full">
                     {category.products.findIndex(
@@ -310,7 +309,7 @@ const ProductPage = () => {
                     of {category.products.length}
                   </span>
                 )}
-              </div>
+              </div> */}
               <h1 className="text-4xl font-bold mb-2 text-gray-900">
                 {product.name}
               </h1>
@@ -359,6 +358,7 @@ const ProductPage = () => {
         </div>
       </div>
 
+       
       {/* Product Details */}
       <div className="max-w-8xl mx-auto  py-20">
         {product.details && product.details.length > 0 && (

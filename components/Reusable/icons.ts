@@ -96,7 +96,7 @@ export {default as MapBg} from '@/assets/About/manufacturing/BGMap.png';
 // About - manufacture
 
 export {default as Logo2} from "@/assets/About/Manufacturing/Manufacture/bat1.svg";
-export {default as Logo1} from "@/assets/About/Manufacturing/Manufacture/Icon 11.svg";
+export {default as Logo1} from "@/assets/About/Manufacturing/Manufacture/Icon11.svg";
 export {default as Logo3} from "@/assets/About/Manufacturing/Manufacture/solar1.svg";
 export {default as Logo4} from "@/assets/About/Manufacturing/Manufacture/solar2.svg";
 

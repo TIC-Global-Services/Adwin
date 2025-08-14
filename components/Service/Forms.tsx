@@ -43,7 +43,7 @@ const Forms: React.FC = () => {
 
       {/* Warranty */}
       {activeForm === 'warranty' && (
-        <div>
+        <div className='mt-[90px]'>
 
           <p>Warranty form content</p>
         </div>

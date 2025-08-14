@@ -48,7 +48,7 @@ const FAQContent: React.FC = () => {
 
   return (
     <div className="min-h-screen py-8 sm:py-12 md:py-20">
-      <div className="max-w-4xl mx-auto px-4 md:px-20">
+      <div className="max-w-7xl mx-auto px-4 md:px-20">
         {/* FAQ List */}
         <div className="space-y-4">
           {faqData.map((faq, index) => (

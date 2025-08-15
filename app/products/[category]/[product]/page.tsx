@@ -238,7 +238,6 @@ const ProductPage = () => {
       </nav> */}
 
       {/* Product Selector for Multiple Products */}
-     
 
       {/* Product Header */}
       <div className="">
@@ -264,41 +263,40 @@ const ProductPage = () => {
           </div>
         </div>
         {category.products && category.products.length > 1 && (
-        <div className="mb-15">
-          <div className="text-center">
-            {/* <h2 className="text-2xl font-bold text-gray-900 mb-2">
+          <div className="mb-15">
+            <div className="text-center">
+              {/* <h2 className="text-2xl font-bold text-gray-900 mb-2">
               {category.title}
             </h2> 
             <p className="text-gray-600">Select a product to view details</p>*/}
-          </div>
+            </div>
 
-          <div className="flex flex-wrap justify-center gap-4 mb-8">
-            {category.products.map((categoryProduct, index) => (
-              <button
-                key={index}
-                onClick={() => {
-                  const newSlug = createSlug(categoryProduct.name);
-                  router.push(
-                    `/products/${createSlug(category.title)}/${newSlug}`
-                  );
-                }}
-                className={`px-6 py-3 rounded-lg font-medium transition-all duration-200 ${
-                  categoryProduct.name === product.name
-                    ? "bg-[#ECFCE8] text-[#005F20] cursor-pointer transform hover:scale-105"
-                    : "bg-[#F8F8F8] text-[#4A4A4A]  cursor-pointer hover:scale-105"
-                }`}
-              >
-                {categoryProduct.name}
-              </button>
-            ))}
+            <div className="flex flex-wrap justify-center gap-4 mb-8">
+              {category.products.map((categoryProduct, index) => (
+                <button
+                  key={index}
+                  onClick={() => {
+                    const newSlug = createSlug(categoryProduct.name);
+                    router.push(
+                      `/products/${createSlug(category.title)}/${newSlug}`
+                    );
+                  }}
+                  className={`px-6 py-3 rounded-lg font-medium transition-all duration-200 ${
+                    categoryProduct.name === product.name
+                      ? "bg-[#ECFCE8] text-[#005F20] cursor-pointer transform hover:scale-105"
+                      : "bg-[#F8F8F8] text-[#4A4A4A]  cursor-pointer hover:scale-105"
+                  }`}
+                >
+                  {categoryProduct.name}
+                </button>
+              ))}
+            </div>
           </div>
-        </div>
-      )}
-
+        )}
 
         {/* Content Section */}
         <div className="grid md:grid-cols-2 gap-12 mb-16 justify-center items-center max-w-8xl mx-auto md:px-15">
-          <div className="space-y-6 ">
+          <div className=" ">
             <div>
               {/* <div className="flex items-center  gap-2 mb-2">
                 {category.products && category.products.length > 1 && (
@@ -310,23 +308,22 @@ const ProductPage = () => {
                   </span>
                 )}
               </div> */}
-               <h3 className="text-2xl font-semibold text-gray-900">
-  {(() => {
-    const words = product.name.split(" ");
-    if (words.length === 1) {
-      // Only one word → keep normal color
-      return product.name;
-    }
-    const lastWord = words.pop(); // remove last word
-    return (
-      <>
-        {words.join(" ")}{" "}
-        <span className="text-[#005F20]">{lastWord}</span>
-      </>
-    );
-  })()}
-</h3>
-
+              <h3 className="text-[42px] font-semibold text-gray-900">
+                {(() => {
+                  const words = product.name.split(" ");
+                  if (words.length === 1) {
+                    // Only one word → keep normal color
+                    return product.name;
+                  }
+                  const lastWord = words.pop(); // remove last word
+                  return (
+                    <>
+                      {words.join(" ")}{" "}
+                      <span className="text-[#005F20]">{lastWord}</span>
+                    </>
+                  );
+                })()}
+              </h3>
             </div>
             <p className="text-gray-600 text-lg leading-relaxed">
               {product.desc}
@@ -372,7 +369,6 @@ const ProductPage = () => {
         </div>
       </div>
 
-       
       {/* Product Details */}
       <div className="max-w-8xl mx-auto  py-20">
         {product.details && product.details.length > 0 && (
@@ -395,22 +391,24 @@ const ProductPage = () => {
                     {/* Top content */}
                     <div>
                       <div className="flex flex-row justify-between gap-5 mt-3">
-                      <h3 className="text-2xl font-semibold text-gray-900">
-  {(() => {
-    const words = detail.name.split(" ");
-    if (words.length === 1) {
-      // Only one word → keep normal color
-      return detail.name;
-    }
-    const lastWord = words.pop(); // remove last word
-    return (
-      <>
-        {words.join(" ")}{" "}
-        <span className="text-[#005F20]">{lastWord}</span>
-      </>
-    );
-  })()}
-</h3>
+                        <h3 className="text-2xl font-semibold text-gray-900">
+                          {(() => {
+                            const words = detail.name.split(" ");
+                            if (words.length === 1) {
+                              // Only one word → keep normal color
+                              return detail.name;
+                            }
+                            const lastWord = words.pop(); // remove last word
+                            return (
+                              <>
+                                {words.join(" ")}{" "}
+                                <span className="text-[#005F20]">
+                                  {lastWord}
+                                </span>
+                              </>
+                            );
+                          })()}
+                        </h3>
 
                         <p className="text-gray-600 leading-relaxed max-w-sm">
                           {detail.desc}
